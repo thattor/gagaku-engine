@@ -1,0 +1,46 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>三管生成音・診断プレイヤー</title>
+<style>body{font:17px system-ui;max-width:760px;margin:40px auto;padding:0 20px;line-height:1.7;color:#182c35;background:#f6f4ef}button,select{font:inherit;padding:10px 18px;margin:6px;border:1px solid #536a72;border-radius:6px}button{background:#153e4b;color:white}button:disabled{opacity:.4}audio{width:100%}small{color:#566369}a{color:#174c6d}#status{background:white;padding:16px;border-left:4px solid #275b69}</style>
+<h1>笙・龍笛・篳篥の生成音</h1>
+<p>物理モデルから生成した自前音源の診断用試聴です。<strong>五常楽急の製品候補は未完成です。</strong>下の音列・終了形は自作の検査入力で、原譜の合竹・初度／二返・止手・出口の検証を代替しません。</p>
+<p><button id="start">開始</button><button id="finish" disabled>次の診断出口で終了</button><button id="abort" disabled>即時停止</button></p>
+<div id="status" role="status" aria-live="polite">音声を読み込んで開始します。</div>
+<p><small>40秒単位で反復し、終了要求後は第四区間の終わりで6秒の自作終了形へ進みます。「即時停止」は試聴中断用です。実曲の止手は未検証のため使用しません。</small></p>
+<h2>固定試聴セット</h2>
+<p>開発区間46秒（三管合奏、残響なし）</p><audio controls src="development.wav"></audio>
+<p>調整外区間46秒</p><audio controls src="holdout.wav"></audio>
+<p>笙</p><audio controls src="development-sho.wav"></audio>
+<p>龍笛</p><audio controls src="development-ryuteki.wav"></audio>
+<p>篳篥</p><audio controls src="development-hichiriki.wav"></audio>
+<h2>長尺の診断再生</h2>
+<p>5分で終了要求 → 5分26秒</p><audio controls src="diagnostic-300s.wav"></audio>
+<p>10分で終了要求 → 10分6秒</p><audio controls src="diagnostic-600s.wav"></audio>
+<p>20分で終了要求 → 20分6秒</p><audio controls src="diagnostic-1200s.wav"></audio>
+<p><a href="manifest.json">入力・生成元・hash・判定</a> / <a href="rights.json">権利台帳</a> / <a href="README.md">再生成と制約</a></p>
+<script>
+let context,buffers={},source,timer,pass=1,line=0,pending=false,running=false,nextTime=0;
+const start=document.querySelector('#start'),finish=document.querySelector('#finish'),abort=document.querySelector('#abort'),status=document.querySelector('#status');
+function show(message){status.textContent=message}
+function cleanup(){clearTimeout(timer);running=false;start.disabled=false;finish.disabled=abort.disabled=true;}
+function schedule(){
+ if(!running)return;
+ const key=pass===1?'first_pass':'return_pass';
+ const ending=pending&&line===4;
+ if(line===4&&!ending){line=0;pass++}
+ const name=ending?'ending':`${pass===1?'first_pass':'return_pass'}-${line}`;
+ source=context.createBufferSource();source.buffer=buffers[name];source.connect(context.destination);source.start(nextTime);
+ const begins=nextTime;nextTime+=source.buffer.duration;
+ if(ending){show('診断終了形を再生中');timer=setTimeout(()=>{cleanup();show('診断再生終了（実曲の止手・出口は未検証）')},Math.max(0,(nextTime-context.currentTime)*1000));return}
+ show(`${pass}回目・第${line+1}区間${pending?'／終了要求待機':''}`);line++;
+ // Schedule the next block before this one ends; finish requests stay pending.
+ timer=setTimeout(schedule,Math.max(0,(nextTime-context.currentTime-.10)*1000));
+}
+start.onclick=async()=>{
+ start.disabled=true;
+ try{context??=new AudioContext({sampleRate:48000});await context.resume();
+ if(!buffers.ending){show('自前WAVを読み込み中');for(const name of [...['first_pass','return_pass'].flatMap(v=>[0,1,2,3].map(i=>`${v}-${i}`)),'ending']){const response=await fetch(`${name}.wav`);if(!response.ok)throw Error(`${name}: ${response.status}`);buffers[name]=await context.decodeAudioData(await response.arrayBuffer())}}
+ pass=1;line=0;pending=false;running=true;finish.disabled=abort.disabled=false;nextTime=context.currentTime+.15;schedule();
+ }catch(error){cleanup();show(`開始できません: ${error.message}`)}
+};
+finish.onclick=()=>{pending=true;finish.disabled=true;show('終了要求を受付。第四区間の診断出口まで再生します。')};
+abort.onclick=()=>{source?.stop();cleanup();show('試聴を中断しました')};
+</script></html>

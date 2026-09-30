@@ -1,0 +1,4 @@
+# Baseline corpus-validator dependency from the source project.
+# Audio rendering itself uses the Python standard library.
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1

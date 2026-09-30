@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "1pjinja gagaku reference corpus metadata v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "0.1.0"},
+    "purpose": {"const": "reference_metadata_only_no_audio_or_figures_stored"},
+    "sources": {
+      "type": "object",
+      "minProperties": 0,
+      "propertyNames": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
+      "additionalProperties": {"$ref": "#/$defs/source"}
+    },
+    "entries": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/entry"},
+      "minItems": 0
+    }
+  },
+  "required": ["schema_version", "purpose", "sources", "entries"],
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "journal_article",
+            "conference_paper",
+            "field_recording",
+            "broadcast",
+            "archive_repository",
+            "other"
+          ]
+        },
+        "citation_text": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "doi": {
+          "anyOf": [
+            {"type": "string", "pattern": "^10\\.[0-9]{4,9}/\\S+$"},
+            {"type": "null"}
+          ]
+        },
+        "doi_verification_status": {"enum": ["verified", "unverified", "not_applicable"]},
+        "publisher_or_venue": {
+          "anyOf": [{"type": "string", "minLength": 1, "pattern": "\\S"}, {"type": "null"}]
+        },
+        "retrieved_on": {"anyOf": [{"type": "string", "format": "date"}, {"type": "null"}]},
+        "primary_source_rechecked": {"type": "boolean"}
+      },
+      "required": [
+        "kind",
+        "citation_text",
+        "doi",
+        "doi_verification_status",
+        "publisher_or_venue",
+        "retrieved_on",
+        "primary_source_rechecked"
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {"enum": ["unverified", "imported", "verified", "conflicted"]},
+        "source_ref": {"anyOf": [{"type": "string", "minLength": 1, "pattern": "\\S"}, {"type": "null"}]},
+        "checked_on": {"anyOf": [{"type": "string", "format": "date"}, {"type": "null"}]}
+      },
+      "required": ["status", "source_ref", "checked_on"],
+      "allOf": [
+        {
+          "if": {"properties": {"status": {"const": "verified"}}},
+          "then": {
+            "properties": {
+              "source_ref": {"type": "string", "minLength": 1, "pattern": "\\S"},
+              "checked_on": {"type": "string", "format": "date"}
+            }
+          }
+        }
+      ]
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "entry_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
+        "instrument": {"enum": ["sho", "hichiriki", "ryuteki"]},
+        "pitch_or_fingering": {
+          "anyOf": [{"type": "string", "minLength": 1, "pattern": "\\S"}, {"type": "null"}]
+        },
+        "technique": {
+          "anyOf": [{"type": "string", "minLength": 1, "pattern": "\\S"}, {"type": "null"}]
+        },
+        "source_ref": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
+        "performer": {
+          "anyOf": [{"type": "string", "minLength": 1, "pattern": "\\S"}, {"type": "null"}]
+        },
+        "recording_date": {"anyOf": [{"type": "string", "format": "date"}, {"type": "null"}]},
+        "recording_environment": {
+          "anyOf": [{"type": "string", "minLength": 1, "pattern": "\\S"}, {"type": "null"}]
+        },
+        "rights_category": {
+          "enum": ["public_domain_production_usable", "analysis_only", "unclear_or_prohibited"]
+        },
+        "analysis_permission": {"enum": ["granted", "not_granted", "unknown"]},
+        "production_permission": {"enum": ["granted", "not_granted", "unknown"]},
+        "raw_audio_included": {"const": false},
+        "evidence": {"$ref": "#/$defs/evidence"},
+        "notes": {"anyOf": [{"type": "string", "minLength": 1, "pattern": "\\S"}, {"type": "null"}]}
+      },
+      "required": [
+        "entry_id",
+        "instrument",
+        "pitch_or_fingering",
+        "technique",
+        "source_ref",
+        "performer",
+        "recording_date",
+        "recording_environment",
+        "rights_category",
+        "analysis_permission",
+        "production_permission",
+        "raw_audio_included",
+        "evidence",
+        "notes"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {"rights_category": {"not": {"const": "public_domain_production_usable"}}}
+          },
+          "then": {
+            "properties": {"production_permission": {"not": {"const": "granted"}}}
+          }
+        }
+      ]
+    }
+  }
+}

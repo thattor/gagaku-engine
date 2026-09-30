@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "checked_date": "2026-09-30",
+  "source": "https://www.nihongagakukai.gr.jp/sales/others.html",
+  "candidates": [
+    {"id":"nihongagakukai-sho-hyojo-netori","work":"平調音取","instrument":"笙","performer":"多忠麿","release":"雅楽独習用CD 笙の部 / 大修館書店","instrument_basis":"公式販売説明の笙独奏と演奏者欄","texture":"solo instrument; not a one-reed single-tone measurement","purpose":"Traditional breath/chord articulation reference only"},
+    {"id":"nihongagakukai-hichiriki-hyojo-netori","work":"平調音取","instrument":"篳篥","performer":"東儀兼彦","release":"雅楽独習用CD 篳篥の部 / 大修館書店","instrument_basis":"公式販売説明の篳篥独奏と演奏者欄","texture":"solo instrument; not ensemble or isolated-tone measurement","purpose":"Traditional breath/enbai direction reference only"},
+    {"id":"nihongagakukai-ryuteki-hyojo-netori","work":"平調音取","instrument":"龍笛","performer":"芝祐靖","release":"雅楽独習用CD 笛の部 / 大修館書店","instrument_basis":"公式販売説明の龍笛独奏と演奏者欄; not inferred from song title","texture":"solo instrument; not kagurabue or isolated-tone measurement","purpose":"Traditional register/articulation direction reference only"}
+  ],
+  "listening_status": "metadata confirmed / 未試聴",
+  "recording_pitch_range": "unconfirmed; no signal measurement",
+  "special_techniques": "unconfirmed in these recordings",
+  "reverb_processing": "unconfirmed",
+  "permitted_use_review": "Metadata only; no acquisition, extraction, rerecording, DRM bypass, machine analysis, learning or redistribution authorization claimed",
+  "production_material": false,
+  "score_authority": "Not used for Goshouraku notes, repeat directives or tomede",
+  "priority": "Optional references; score rendering proceeds independently"
+}

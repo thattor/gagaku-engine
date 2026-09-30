@@ -1,0 +1,21 @@
+{
+  "version": "diagnostic-protocol-v1",
+  "goal": "PRODUCT_GOAL_V1",
+  "scope": "Own diagnostic transitions; not a transcription of Goshouraku-kyu",
+  "sample_rate_hz": 48000,
+  "development": {"seconds": 40, "pitches_midi": [69, 74, 76, 81, 83, 86]},
+  "holdout": {"seconds": 40, "pitches_midi": [71, 73, 78, 85]},
+  "control": {"seed": 5901, "line_seconds": 10, "lines": 4, "ending_seconds": 6, "crossfade_seconds": 0.08, "sho_transition_seconds": 0.8},
+  "inspection": {
+    "finite_raw": "Every physical-model sample must be finite",
+    "nonempty_stems": "Every scheduled note has finite nonzero output",
+    "pcm_clipping": "No PCM sample reaches digital full scale",
+    "coverage": "Exactly one logged realization per input event; intentional rests explicit",
+    "join": "Raised-cosine envelopes start and end at zero; compare rendered seam with equivalent continuous schedule",
+    "defect_detector": "Must reject injected NaN, empty voice and digital full-scale samples",
+    "similarity": "No numerical timbre acceptance threshold. User U remains unevaluated",
+    "long_duration": "5/10/20 minute diagnostic engineering tests cannot pass product E without verified score and ending"
+  },
+  "comparison": "Same fixture, synthesis bank and playback gain for all control comparisons; mono stems then stereo mix, no reverberation",
+  "listening": "Headphones or stereo speakers at a comfortable level; gain is a listening design, not calibrated instrument pressure"
+}

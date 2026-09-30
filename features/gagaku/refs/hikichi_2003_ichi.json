@@ -1,0 +1,55 @@
+{
+  "reference_id": "hikichi-2003-ichi-original-length",
+  "source": {
+    "title": "Time-domain simulation of sound production of the sho",
+    "authors": ["Takafumi Hikichi", "Naotoshi Osaka", "Fumitada Itakura"],
+    "journal": "Journal of the Acoustical Society of America 113(2), 1092-1101 (2003)",
+    "doi": "10.1121/1.1534605",
+    "url": "https://doi.org/10.1121/1.1534605",
+    "rights": "reference and analysis only; article and figures are not redistributed"
+  },
+  "instrument": "sho",
+  "pipe": "ichi",
+  "source_locations": {
+    "target_hz": "Section II.A; ichi B4 sounding frequency",
+    "pipe_length_m": "Section IV.B; original pipe length Lp = 24.1 cm",
+    "published_simulation_hz": "Section IV.B; 477 Hz, approximately 1.2% below experiment",
+    "model_parameters": "Table II",
+    "pressure_spectral_trend": "Section IV.C and Figure 12; high-frequency content grows at 0.4, 0.6, 0.8 kPa",
+    "threshold_length_dependence": "Sections II.B and IV.A; Figures 4 and 10",
+    "original_pipe_experimental_thresholds": "Section III.D; positive 370 Pa and negative 90 Pa at Lp = 24.1 cm",
+    "simulated_inhibited_resonance_band": "Section IV.A; 210-350 Hz at up to 1 kPa"
+  },
+  "target_hz": 483.7,
+  "frequency_tolerance_percent": 2.0,
+  "pipe_length_m": 0.241,
+  "published_simulation_hz": 477.0,
+  "original_pipe_experimental_threshold_positive_pa": 370.0,
+  "original_pipe_experimental_threshold_negative_pa": 90.0,
+  "published_simulation_inhibited_pipe_resonance_hz": [210.0, 350.0],
+  "paper_model_parameters": {
+    "sample_rate_hz": 48000,
+    "reed_length_m": 0.01,
+    "reed_width_m": 0.002,
+    "reed_thickness_m": 0.0003,
+    "reed_initial_tip_displacement_m": 0.0,
+    "clearance_gap_m": 0.00001,
+    "reed_q_range": [8, 35],
+    "reed_natural_frequency_hz": 470.0,
+    "reed_material_density_kg_m3": 8000.0,
+    "additional_mass_ratio_range": [0.0, 0.3],
+    "pipe_radius_m": 0.0035,
+    "blowing_pressure_range_pa": [0.0, 1000.0],
+    "channel_length_m": 0.001,
+    "flow_contraction_coefficient": 0.61,
+    "air_density_kg_m3": 1.2,
+    "sound_speed_m_s": 340.0
+  },
+  "qualitative_targets": {
+    "threshold_depends_on_pipe_length": true,
+    "high_frequency_content_increases_with_pressure": true,
+    "second_and_fourth_harmonics_enhanced": true
+  },
+  "reference_audio": null,
+  "reference_audio_status": "No reusable source waveform was identified; compare against reported measurements and qualitative observations."
+}

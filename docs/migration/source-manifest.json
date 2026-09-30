@@ -1,0 +1,347 @@
+{
+  "version": "baseline-extraction-v1",
+  "source_repository": "thattor/1pjinja",
+  "source_pr": 60,
+  "source_commit": "96223889106fa98c85a52d2f08ba8d04f186fb9d",
+  "scope": "Reviewed features/gagaku text/code and one generic JSON helper only; no source Git history, business data, credentials, source images, PDFs or third-party audio.",
+  "purpose": "Runnable baseline for SHO_READING_V1; extraction does not validate notation, transitions or product acceptance.",
+  "source_goal_sha256": "a8276f443a95becd7e5a79ccf8827e42611a85eb8ceacef4d0d10049b8c92244",
+  "files": [
+    {
+      "source_path": "app/json_documents.py",
+      "destination_path": "app/json_documents.py",
+      "sha256": "384992fce8c27ab5a33988bfefc142f4cece76734e51cb26c8d111c0c50af66b",
+      "bytes": 1542,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/README.md",
+      "destination_path": "features/gagaku/README.md",
+      "sha256": "262a04513d25cffc2f8551e922dd7f75e883495fd5145d39c5374744a98eb4ec",
+      "bytes": 8603,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/__init__.py",
+      "destination_path": "features/gagaku/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/diagnostics.py",
+      "destination_path": "features/gagaku/diagnostics.py",
+      "sha256": "6c4fb3590eaee1a3ba7dcc80f8093370b38ca371cbba8fa7ab1e81afc75dc495",
+      "bytes": 9486,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/evaluate.py",
+      "destination_path": "features/gagaku/evaluate.py",
+      "sha256": "c98ff66d0428292d4599a9e4433b4ee2a8fc7c071c1a5a38b8956f582dc5a701",
+      "bytes": 17526,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/experiment.py",
+      "destination_path": "features/gagaku/experiment.py",
+      "sha256": "a025c5391572cec5de36b08ec52d7f82b0a702658c1caa20b43d541cd8b9ee00",
+      "bytes": 15747,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/player.py",
+      "destination_path": "features/gagaku/player.py",
+      "sha256": "0f849955b68c1a2c866f2135f7cbef1a5c634c9b4f4c6bc104cd6001cc3c58bc",
+      "bytes": 4677,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/PRODUCT_GOAL_V1.md",
+      "destination_path": "features/gagaku/product/PRODUCT_GOAL_V1.md",
+      "sha256": "a8276f443a95becd7e5a79ccf8827e42611a85eb8ceacef4d0d10049b8c92244",
+      "bytes": 19700,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/README.md",
+      "destination_path": "features/gagaku/product/README.md",
+      "sha256": "de25d2c603628fc7594f600fbe0da170c5d55b48856cd009922e7a727d3a179e",
+      "bytes": 3412,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/__init__.py",
+      "destination_path": "features/gagaku/product/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/audio.py",
+      "destination_path": "features/gagaku/product/audio.py",
+      "sha256": "597cba9b414b64775a60e6cbb6f118fd30bd1481c8c8f8d1b7ea9cb74f887a1d",
+      "bytes": 12817,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/decisions.md",
+      "destination_path": "features/gagaku/product/decisions.md",
+      "sha256": "2fd1a74ca78a8030a8bb3f32200469000fa3298c2b2348b41449747ed7cdd58f",
+      "bytes": 3432,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/fetch_score_sources.py",
+      "destination_path": "features/gagaku/product/fetch_score_sources.py",
+      "sha256": "fb6ec50bf45f201f4d1fe0edb6548f49fc83085495848105c4bf693a5334716c",
+      "bytes": 1410,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/fixture.json",
+      "destination_path": "features/gagaku/product/fixture.json",
+      "sha256": "6280b972333fb0c7b98cde1373ffe37fdd0678392f49de5dbc6cbf7a7a8558df",
+      "bytes": 676,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/models.py",
+      "destination_path": "features/gagaku/product/models.py",
+      "sha256": "43366a09b35e5a0831d811b738d395e7b80f3584f9c2faaf69e9edfd9bb6184f",
+      "bytes": 4565,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/parameters.json",
+      "destination_path": "features/gagaku/product/parameters.json",
+      "sha256": "f6bcd6696edd9447d4f0eb9b21c87e018f4620dee83bc56f0072b30716737fc8",
+      "bytes": 2692,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/player.html",
+      "destination_path": "features/gagaku/product/player.html",
+      "sha256": "353b2c14076c8ef0902dd747ca2757df263ba19cf99a004505df0b071eb2d4d5",
+      "bytes": 4492,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/protocol.json",
+      "destination_path": "features/gagaku/product/protocol.json",
+      "sha256": "6d7db8a551c4f8fd01612f284f868fdb52ac158cd1618e293baca5f589cd1d0f",
+      "bytes": 1478,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/reference-candidates.json",
+      "destination_path": "features/gagaku/product/reference-candidates.json",
+      "sha256": "beb750bb189270c042400131eb7dbdb58bcbd8eca023f1427e2eb6f33c8cf4eb",
+      "bytes": 1888,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/rights.json",
+      "destination_path": "features/gagaku/product/rights.json",
+      "sha256": "1db20d4b6702c50e9e714f4860bbe1a48d50d509998c1a27a4e3e91738080b30",
+      "bytes": 5810,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/score-evidence.json",
+      "destination_path": "features/gagaku/product/score-evidence.json",
+      "sha256": "08faa0bed330077cce1cca71da9a3a252dea0f69ba700973880184ee01a131e4",
+      "bytes": 3081,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/score-fixture.json",
+      "destination_path": "features/gagaku/product/score-fixture.json",
+      "sha256": "cc9b7b9422b838a16dac18afef630bcbbcffda90658e7f5dd13cf3202b31238a",
+      "bytes": 49385,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/score-reading.md",
+      "destination_path": "features/gagaku/product/score-reading.md",
+      "sha256": "2273aa8a69feae60a1fa572098b5d02a382c2d83b7430d3324b232cd3182ca87",
+      "bytes": 9389,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/score-review.json",
+      "destination_path": "features/gagaku/product/score-review.json",
+      "sha256": "8dd2194c02002617eeed78c233b5ab7b5ec4cc9c6ff80a1e7202c721be7ef15d",
+      "bytes": 8601,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/score-sources.json",
+      "destination_path": "features/gagaku/product/score-sources.json",
+      "sha256": "84b01fab9637011809ade2f159bd7ed9eb93435027f4a639715ca2275bfb0130",
+      "bytes": 23990,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/score_audio.py",
+      "destination_path": "features/gagaku/product/score_audio.py",
+      "sha256": "46f7522e069245147064d52b8dcde18fa2b9b50f3e2e21d933b25c33659def1b",
+      "bytes": 7555,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/source-snapshot.json",
+      "destination_path": "features/gagaku/product/source-snapshot.json",
+      "sha256": "d0d044ed377500769ec45944e852d029e40f9dfa286537236de8edded7e27bee",
+      "bytes": 288,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/status.json",
+      "destination_path": "features/gagaku/product/status.json",
+      "sha256": "92f8e3365f53b5500f8532ed10986bb565c5834f8a01e392a7f0da78fb1f4809",
+      "bytes": 2679,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/test_product.py",
+      "destination_path": "features/gagaku/product/test_product.py",
+      "sha256": "8f6282db095cf5ce374b7d2a6a2ffcce885ab45a8ba59c57aee495c74ddadae5",
+      "bytes": 2887,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/test_score_audio.py",
+      "destination_path": "features/gagaku/product/test_score_audio.py",
+      "sha256": "1156468a9dbcdb5a0d6cc5c1140e188309ae44f871e9f01ee3ebd9a5d97b4772",
+      "bytes": 2406,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/verify.py",
+      "destination_path": "features/gagaku/product/verify.py",
+      "sha256": "acd0b1d0f54c2eea476743f06f7294d0ffe6ae0ac1ac38c3e1211b127c37a9e9",
+      "bytes": 5249,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/product/verify_score.py",
+      "destination_path": "features/gagaku/product/verify_score.py",
+      "sha256": "b625429a93fa53ff1bec69ebeddfd088821f210bab6c34201b27c63a8bcc1205",
+      "bytes": 3177,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/provenance.json",
+      "destination_path": "features/gagaku/provenance.json",
+      "sha256": "9931267d40d4defe1937a4bd254f37d3c17da1dd7d8db97104e167fe41255048",
+      "bytes": 4924,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/radiation_experiment.py",
+      "destination_path": "features/gagaku/radiation_experiment.py",
+      "sha256": "1c010ed9c8448fe7352bffd6b1afef3fa4074ef5efdc2fc657c6ca64746bf3d6",
+      "bytes": 16809,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/references/README.md",
+      "destination_path": "features/gagaku/references/README.md",
+      "sha256": "c2e28d8c0258c83cab0f350321e29c3b656042194f84c78ca9e2fd0cead66ac5",
+      "bytes": 5871,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/references/corpus.schema.json",
+      "destination_path": "features/gagaku/references/corpus.schema.json",
+      "sha256": "4a8fc132a206e4e34837de728ffddadf7d87fcc1344b53b08247f8107436e91e",
+      "bytes": 4792,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/references/data/reference-corpus.v0.1.json",
+      "destination_path": "features/gagaku/references/data/reference-corpus.v0.1.json",
+      "sha256": "980525a8b519d97a21d40c4f9237121f6db5c5a3dac71ca3833a7d0063f510df",
+      "bytes": 3200,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/references/test_corpus.py",
+      "destination_path": "features/gagaku/references/test_corpus.py",
+      "sha256": "999e8092b23c81a4b8c098a2082421e1c246a1d3929fd30f599127bbeaf1ed0d",
+      "bytes": 7581,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/references/validation.py",
+      "destination_path": "features/gagaku/references/validation.py",
+      "sha256": "5944db66f7652148a898c8bdd105f9584759f3d7559185c33ddfa4d94a076c9b",
+      "bytes": 2077,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/reflection_diagnostics.py",
+      "destination_path": "features/gagaku/reflection_diagnostics.py",
+      "sha256": "6acb497991d12cee90b3f24efdc64293aeebb2a77234131ea33d6e3c281c88a6",
+      "bytes": 5354,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/refs/hikichi_2003_ichi.json",
+      "destination_path": "features/gagaku/refs/hikichi_2003_ichi.json",
+      "sha256": "5ae52f6b3c0fd947ad9e6bd8bd1b37c61723040cd1fbbb1d926f9826a48a1c90",
+      "bytes": 2461,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/sho_one_pipe.py",
+      "destination_path": "features/gagaku/sho_one_pipe.py",
+      "sha256": "7c3f9e1f74e4265327f63b938a5b98f11ced7a0b862ffd6cf4c58d2c6be6486a",
+      "bytes": 11301,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/spherical_load.py",
+      "destination_path": "features/gagaku/spherical_load.py",
+      "sha256": "28a279c3b6b263445324ffd02fc972254e88eba6386d485a7a706192b63e5f48",
+      "bytes": 10212,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/structure.json",
+      "destination_path": "features/gagaku/structure.json",
+      "sha256": "211b57d4b6debd6244a46be47d05b78d35bf8370663e711406bdf00f52eb27b8",
+      "bytes": 650,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/test_player.py",
+      "destination_path": "features/gagaku/test_player.py",
+      "sha256": "5864c6bd509bbf53487e338f1d74d2c071dd7d3ed68a04d96ea04152f507e1d6",
+      "bytes": 3994,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/test_sho_one_pipe.py",
+      "destination_path": "features/gagaku/test_sho_one_pipe.py",
+      "sha256": "262083855a943e9da56019f09987b4207f5a9b55552538b1bb86d9142cbc1f32",
+      "bytes": 1441,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/test_spherical_load.py",
+      "destination_path": "features/gagaku/test_spherical_load.py",
+      "sha256": "e12890c3355f5be3cf84a14b8694d19bc827108777c06b6740c1625eb80d5f8c",
+      "bytes": 7523,
+      "baseline_byte_identical": true
+    },
+    {
+      "source_path": "features/gagaku/tests/test_evaluate.py",
+      "destination_path": "features/gagaku/tests/test_evaluate.py",
+      "sha256": "9e99071385cc713f3fd76f1c7581c7a95f843407785810fe0838ccfb4a5daccd",
+      "bytes": 7115,
+      "baseline_byte_identical": true
+    }
+  ]
+}

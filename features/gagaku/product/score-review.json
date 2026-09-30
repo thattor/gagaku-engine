@@ -1,0 +1,264 @@
+{
+  "version": "score-review-v2",
+  "sources": [
+    {
+      "identifier": "1192407",
+      "manifest_url": "https://dl.ndl.go.jp/api/iiif/1192407/manifest.json",
+      "metadata": [
+        {
+          "label": "Persistent ID",
+          "value": "info:ndljp/pid/1192407"
+        },
+        {
+          "label": "Title",
+          "value": "鳳笙譜.初之巻"
+        },
+        {
+          "label": "Creator",
+          "value": "雅楽講究会 編"
+        },
+        {
+          "label": "Publisher",
+          "value": "雅楽講究会"
+        },
+        {
+          "label": "Publication Date",
+          "value": "昭和7"
+        },
+        {
+          "label": "Publication Date (W3CDTF fortmat)",
+          "value": "1932"
+        },
+        {
+          "label": "Call Number",
+          "value": "232-390"
+        },
+        {
+          "label": "Bibliographic ID",
+          "value": "000000773370"
+        },
+        {
+          "label": "DOI",
+          "value": "10.11501/1192407"
+        },
+        {
+          "label": "Access Restrictions",
+          "value": "PDM"
+        },
+        {
+          "label": "URL",
+          "value": "https://dl.ndl.go.jp/info:ndljp/pid/1192407"
+        }
+      ],
+      "manifest_sha256": "0f40a56ba6de99192ea2d16c1a7c60ac6d4b9f6a788d4f1582c5a67c29ad3fb4",
+      "reviewed_canvases": {
+        "5": "75777bac43d75b93e9a69c92fcb3184c37bdb2dc8692f1155b0e5a342f9e6923",
+        "6": "41b5e5736c3dfb67ffea1b9008cf632226dd73cff56d994d5f8c22497850ae2f",
+        "14": "0834112950911f3a96f943050982d517821f0dd58e535f8bebb86b0feaaa5144",
+        "15": "72a11df6a5f7cdc196e87f7cdefc0149b14e33c59d51aa55042156916ff63f50"
+      },
+      "production": "not adopted; event correspondence unverified"
+    },
+    {
+      "identifier": "1194354",
+      "manifest_url": "https://dl.ndl.go.jp/api/iiif/1194354/manifest.json",
+      "metadata": [
+        {
+          "label": "Persistent ID",
+          "value": "info:ndljp/pid/1194354"
+        },
+        {
+          "label": "Title",
+          "value": "竜笛譜.初之巻"
+        },
+        {
+          "label": "Creator",
+          "value": "雅楽講究会 編"
+        },
+        {
+          "label": "Publisher",
+          "value": "雅楽講究会"
+        },
+        {
+          "label": "Publication Date",
+          "value": "昭和7"
+        },
+        {
+          "label": "Publication Date (W3CDTF fortmat)",
+          "value": "1932"
+        },
+        {
+          "label": "Call Number",
+          "value": "232-391"
+        },
+        {
+          "label": "Bibliographic ID",
+          "value": "000000780391"
+        },
+        {
+          "label": "DOI",
+          "value": "10.11501/1194354"
+        },
+        {
+          "label": "Access Restrictions",
+          "value": "PDM"
+        },
+        {
+          "label": "URL",
+          "value": "https://dl.ndl.go.jp/info:ndljp/pid/1194354"
+        }
+      ],
+      "manifest_sha256": "a6cb2e2917b950bc9961c9a68511da6b4943833daf54d2070ca10c8048051d31",
+      "reviewed_canvases": {
+        "5": "9c42bcb97400c700f0f500fdf3c25c8da6345f309300d1e6b6c443d90fe0b489",
+        "6": "ceb6af1194044c33230ae979c3a6198bc9038cc28fb9c9740a00d7318d18314c",
+        "14": "cd746e68a237850bde0facdd2145b3be8601116a52f95a6a18a86814897a6a8d",
+        "15": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b"
+      },
+      "production": "not adopted; event correspondence unverified"
+    },
+    {
+      "identifier": "1192011",
+      "manifest_url": "https://dl.ndl.go.jp/api/iiif/1192011/manifest.json",
+      "metadata": [
+        {
+          "label": "Persistent ID",
+          "value": "info:ndljp/pid/1192011"
+        },
+        {
+          "label": "Title",
+          "value": "篳篥譜.初之巻"
+        },
+        {
+          "label": "Creator",
+          "value": "雅楽講究会 編"
+        },
+        {
+          "label": "Publisher",
+          "value": "雅楽講究会"
+        },
+        {
+          "label": "Publication Date",
+          "value": "昭和7"
+        },
+        {
+          "label": "Publication Date (W3CDTF fortmat)",
+          "value": "1932"
+        },
+        {
+          "label": "Call Number",
+          "value": "232-389"
+        },
+        {
+          "label": "Bibliographic ID",
+          "value": "000000770401"
+        },
+        {
+          "label": "DOI",
+          "value": "10.11501/1192011"
+        },
+        {
+          "label": "Access Restrictions",
+          "value": "PDM"
+        },
+        {
+          "label": "URL",
+          "value": "https://dl.ndl.go.jp/info:ndljp/pid/1192011"
+        }
+      ],
+      "manifest_sha256": "d12a35c7962c394257e66c16b25d13eecc50f1d05c2120d0d3124fa25a8b7cc6",
+      "reviewed_canvases": {
+        "5": "13446cf13b7132ba85f72cfad275877475f86510e4fa29bc52059d0232c2c039",
+        "6": "4c6823c95125d60eb05fb2893daa60372dc1cb137432a8d487feec25ce994fe5",
+        "14": "b3eed02492248494887497741ec0be2849529dec65bfea74a9ed5ec61a7fc1f9",
+        "15": "60ac1665d2e141a856d3444f466f8efdc589420c9cabae5b5668b4a28b71600a"
+      },
+      "production": "not adopted; event correspondence unverified"
+    }
+  ],
+  "missing": [
+    {
+      "id": "sho.compounds",
+      "locations": [
+        "1192407 c15 p18 line3 cell6",
+        "1192407 c15 p18 line4 cell3",
+        "855853 c30 p21 corresponding positions"
+      ],
+      "question": "Two stacked signs: exact pipe membership and hand-shift order, not a generic chord crossfade"
+    },
+    {
+      "id": "sho.handshift",
+      "locations": [
+        "855853 c13 left and c14 right",
+        "1192407 first 十→行→下→十 and remaining transitions"
+      ],
+      "question": "Diagram explains breathing/strength contour but says details are oral; transition-specific finger order/timing not established"
+    },
+    {
+      "id": "ryuteki.register",
+      "locations": [
+        "1194354 c14 p17 first line all eight cells",
+        "855852 c9 left/c10"
+      ],
+      "question": "Finger signs and pitch classes read; exact fukura/seme, 由 continuation and ornament subdivisions not certified"
+    },
+    {
+      "id": "metric",
+      "locations": [
+        "855851 c11 left first テエルレエ",
+        "855852 c10-11",
+        "1932 red primary points"
+      ],
+      "question": "8 primary points per line verified; full pulse alignment and within-cell timing still preview design"
+    },
+    {
+      "id": "hichiriki.body",
+      "locations": [
+        "1192011 c14 p17 first line ノハ",
+        "1192011 c15 p18 lines2-4"
+      ],
+      "question": "Secondary signs, breath treatment and all later events need separate source audit"
+    },
+    {
+      "id": "first-return",
+      "locations": [
+        "1194354 c15 p18 初度用之 extra right column",
+        "855852 c14 後度用之",
+        "all 1932 c15 二返 at lines2/4 ends"
+      ],
+      "question": "Exact replacement interval and return targets; cannot infer pass2_and_later from label alone"
+    },
+    {
+      "id": "tomede-exit",
+      "locations": [
+        "1932 TOC/front matter/last score and colophon reviewed",
+        "1894 basic explanations and target score reviewed"
+      ],
+      "question": "No inspected source supplies verified three-part hyōjō tomede sequence/entry and eligible exits. Natural excerpt cutoff is not substitute",
+      "remaining_routes": [
+        "1923 独習雅楽選譜 pid1185419: catalog accessible, body restricted; authorized source access needed if selected",
+        "宮内庁明治撰定譜/国書 database: locate actual tomede score and confirm source terms",
+        "Direct primary teaching/PD explanatory score; protected modern recordings remain reference only"
+      ]
+    }
+  ],
+  "reading": "score-reading.md",
+  "source_inventory": "score-sources.json",
+  "fixture": "score-fixture.json",
+  "correction": "1932 canvas5-6 are TOC/instrument diagrams, not notation legends. Finger/beat rules are in 1894 edition canvases9-14 and 1932 sho canvas7.",
+  "progress": {
+    "body_primary_cells_required": 96,
+    "body_primary_cells_notation_checked": 46,
+    "body_primary_cells_pitch_checked": 37,
+    "complete_performance_events_verified": 0,
+    "complete_performance_events_required": null,
+    "required_total_reason": "Secondary ornaments, breath/hand shifts, pass variants and tomede still require enumeration; 96 is a body-primary-cell floor, NOT event denominator",
+    "preview_prefix_realizations": 46,
+    "rendered_preview_primary_cells": 15,
+    "unread_sho_cells": [
+      "sho.L3.P6",
+      "sho.L4.P3"
+    ],
+    "full_candidate_available": false
+  }
+}

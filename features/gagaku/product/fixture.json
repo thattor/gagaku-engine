@@ -1,0 +1,11 @@
+{
+  "version": "diagnostic-transitions-v1",
+  "work": "自作三管遷移検査（五常楽急の転記ではない）",
+  "status": "diagnostic_only",
+  "sho_chords": [[69,76,81,83,86],[71,76,81,83,86],[73,78,81,85,88],[74,78,81,85,90]],
+  "melody": [[69,74,76,74],[76,81,83,81],[71,73,78,73],[78,85,83,78]],
+  "first_pass": [0,1,2,3], "return_pass": [1,0,3,2],
+  "holdout": [2,3,1,0],
+  "ending": {"seconds": 6, "sho": [69,76,81,83,86], "ryuteki": 81, "hichiriki": 69},
+  "event_provenance": "All note groups, envelopes, first/return difference and ending are independently authored engineering stimuli. Not historical aitake, tomede or verified exits of Goshouraku-kyu."
+}

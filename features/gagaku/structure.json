@@ -1,0 +1,18 @@
+{
+  "work": "平調 五常楽急",
+  "version": 1,
+  "lines": ["line_1", "line_2", "line_3", "line_4"],
+  "pass_variants": [
+    {"id": "first_pass", "applies_to": "pass_1", "musical_content_status": "untranscribed"},
+    {"id": "return_candidate", "applies_to": "pass_2_and_later", "musical_content_status": "unverified"}
+  ],
+  "exit_boundaries": [
+    {
+      "id": "after_line_4_candidate",
+      "after_line": "line_4",
+      "validation_status": "unverified",
+      "note": "Symbolic candidate only; exact musical entry to tomede has not been established"
+    }
+  ],
+  "tomede": {"content_status": "unverified", "entry_status": "unverified"}
+}

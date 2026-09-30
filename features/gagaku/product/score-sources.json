@@ -1,0 +1,640 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "1192407",
+      "manifest_url": "https://dl.ndl.go.jp/api/iiif/1192407/manifest.json",
+      "manifest_sha256": "0f40a56ba6de99192ea2d16c1a7c60ac6d4b9f6a788d4f1582c5a67c29ad3fb4",
+      "metadata": [
+        {
+          "label": "Persistent ID",
+          "value": "info:ndljp/pid/1192407"
+        },
+        {
+          "label": "Title",
+          "value": "鳳笙譜.初之巻"
+        },
+        {
+          "label": "Creator",
+          "value": "雅楽講究会 編"
+        },
+        {
+          "label": "Publisher",
+          "value": "雅楽講究会"
+        },
+        {
+          "label": "Publication Date",
+          "value": "昭和7"
+        },
+        {
+          "label": "Publication Date (W3CDTF fortmat)",
+          "value": "1932"
+        },
+        {
+          "label": "Call Number",
+          "value": "232-390"
+        },
+        {
+          "label": "Bibliographic ID",
+          "value": "000000773370"
+        },
+        {
+          "label": "DOI",
+          "value": "10.11501/1192407"
+        },
+        {
+          "label": "Access Restrictions",
+          "value": "PDM"
+        },
+        {
+          "label": "URL",
+          "value": "https://dl.ndl.go.jp/info:ndljp/pid/1192407"
+        }
+      ],
+      "images": {
+        "3": {
+          "sha256": "91b905dd85a936d82d3ddffc3a30565b782dfe0de0a53b2df01ea360be8bee4a",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000003/full/full/0/default.jpg"
+        },
+        "2": {
+          "sha256": "1bfd9d7addd5022a17f52fd08ba07449aa4ca0535bdc3b2b16b3481a7277ab3a",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000002/full/full/0/default.jpg"
+        },
+        "7": {
+          "sha256": "85303a3997e54c7f3c4bc3549cd3368fe5209b14637412a169496ca14d7ff028",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000007/full/full/0/default.jpg"
+        },
+        "4": {
+          "sha256": "cda356ab69d8446fc7e03d198f2c5720f989ee39f16010290a8e74f8678ef704",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000004/full/full/0/default.jpg"
+        },
+        "42": {
+          "sha256": "a4a21667f3307eded469f0d93a02594e3c0e0827fa8ea421c21908915de62f04",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000042/full/full/0/default.jpg"
+        },
+        "43": {
+          "sha256": "2047ddc3d1fd10a181bdcdc6b2051a1f5ac6d881eafce0d3008d7ebd37054cf7",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000043/full/full/0/default.jpg"
+        },
+        "41": {
+          "sha256": "d1f6f7d9b6507ca1f68692fbf84fcd1aca419d7c3d9d55e6fe6fb7f9f47400c4",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000041/full/full/0/default.jpg"
+        },
+        "6": {
+          "sha256": "41b5e5736c3dfb67ffea1b9008cf632226dd73cff56d994d5f8c22497850ae2f",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000006/full/full/0/default.jpg"
+        },
+        "5": {
+          "sha256": "75777bac43d75b93e9a69c92fcb3184c37bdb2dc8692f1155b0e5a342f9e6923",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000005/full/full/0/default.jpg"
+        },
+        "15": {
+          "sha256": "72a11df6a5f7cdc196e87f7cdefc0149b14e33c59d51aa55042156916ff63f50",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000015/full/full/0/default.jpg"
+        },
+        "14": {
+          "sha256": "0834112950911f3a96f943050982d517821f0dd58e535f8bebb86b0feaaa5144",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000014/full/full/0/default.jpg"
+        }
+      }
+    },
+    {
+      "id": "1194354",
+      "manifest_url": "https://dl.ndl.go.jp/api/iiif/1194354/manifest.json",
+      "manifest_sha256": "a6cb2e2917b950bc9961c9a68511da6b4943833daf54d2070ca10c8048051d31",
+      "metadata": [
+        {
+          "label": "Persistent ID",
+          "value": "info:ndljp/pid/1194354"
+        },
+        {
+          "label": "Title",
+          "value": "竜笛譜.初之巻"
+        },
+        {
+          "label": "Creator",
+          "value": "雅楽講究会 編"
+        },
+        {
+          "label": "Publisher",
+          "value": "雅楽講究会"
+        },
+        {
+          "label": "Publication Date",
+          "value": "昭和7"
+        },
+        {
+          "label": "Publication Date (W3CDTF fortmat)",
+          "value": "1932"
+        },
+        {
+          "label": "Call Number",
+          "value": "232-391"
+        },
+        {
+          "label": "Bibliographic ID",
+          "value": "000000780391"
+        },
+        {
+          "label": "DOI",
+          "value": "10.11501/1194354"
+        },
+        {
+          "label": "Access Restrictions",
+          "value": "PDM"
+        },
+        {
+          "label": "URL",
+          "value": "https://dl.ndl.go.jp/info:ndljp/pid/1194354"
+        }
+      ],
+      "images": {
+        "3": {
+          "sha256": "da991a0653ead9deaadfb03c5fd90b449c7b807ec069ed82608cebf5c0871ead",
+          "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000003/full/full/0/default.jpg"
+        },
+        "2": {
+          "sha256": "fc96d02293090cc27ef6a4c06acf3c75627ae54bc73c1e07c7acbfc0c70452d3",
+          "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000002/full/full/0/default.jpg"
+        },
+        "7": {
+          "sha256": "5d300f5ea4878eb6cd9fd73d69a11c1b2ad9311e5fd07de84675c40949092432",
+          "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000007/full/full/0/default.jpg"
+        },
+        "4": {
+          "sha256": "7a3668b02105d229ab0c87e09e2a63c15ce7653caf4752c1dc15b955221f8428",
+          "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000004/full/full/0/default.jpg"
+        },
+        "46": {
+          "sha256": "f87e38dc84749a05b68a59e50e7b80208de5bfb3ec109a9b93458d8307697a26",
+          "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000046/full/full/0/default.jpg"
+        },
+        "47": {
+          "sha256": "43e1c4eff4777a81f66a91545335dd902a28456b84686a1539127c1bdbf0df0c",
+          "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000047/full/full/0/default.jpg"
+        },
+        "45": {
+          "sha256": "ae7e2fb2365e45f11a6f336d56f241e9cd0c33b15d38906406e641d5fb9aa46a",
+          "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000045/full/full/0/default.jpg"
+        },
+        "6": {
+          "sha256": "ceb6af1194044c33230ae979c3a6198bc9038cc28fb9c9740a00d7318d18314c",
+          "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000006/full/full/0/default.jpg"
+        },
+        "5": {
+          "sha256": "9c42bcb97400c700f0f500fdf3c25c8da6345f309300d1e6b6c443d90fe0b489",
+          "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000005/full/full/0/default.jpg"
+        },
+        "14": {
+          "sha256": "cd746e68a237850bde0facdd2145b3be8601116a52f95a6a18a86814897a6a8d",
+          "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000014/full/full/0/default.jpg"
+        },
+        "15": {
+          "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+          "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg"
+        }
+      }
+    },
+    {
+      "id": "1192011",
+      "manifest_url": "https://dl.ndl.go.jp/api/iiif/1192011/manifest.json",
+      "manifest_sha256": "d12a35c7962c394257e66c16b25d13eecc50f1d05c2120d0d3124fa25a8b7cc6",
+      "metadata": [
+        {
+          "label": "Persistent ID",
+          "value": "info:ndljp/pid/1192011"
+        },
+        {
+          "label": "Title",
+          "value": "篳篥譜.初之巻"
+        },
+        {
+          "label": "Creator",
+          "value": "雅楽講究会 編"
+        },
+        {
+          "label": "Publisher",
+          "value": "雅楽講究会"
+        },
+        {
+          "label": "Publication Date",
+          "value": "昭和7"
+        },
+        {
+          "label": "Publication Date (W3CDTF fortmat)",
+          "value": "1932"
+        },
+        {
+          "label": "Call Number",
+          "value": "232-389"
+        },
+        {
+          "label": "Bibliographic ID",
+          "value": "000000770401"
+        },
+        {
+          "label": "DOI",
+          "value": "10.11501/1192011"
+        },
+        {
+          "label": "Access Restrictions",
+          "value": "PDM"
+        },
+        {
+          "label": "URL",
+          "value": "https://dl.ndl.go.jp/info:ndljp/pid/1192011"
+        }
+      ],
+      "images": {
+        "4": {
+          "sha256": "8eb10afc4570f4da5d4b6a4985ef42a2f32b885d07f2279c73c35ed6a183c69c",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000004/full/full/0/default.jpg"
+        },
+        "7": {
+          "sha256": "fcb57d7e7fc7404a4b24f9c1d43473d460eb069736db296fb68cec76dfd574f0",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000007/full/full/0/default.jpg"
+        },
+        "3": {
+          "sha256": "2afdd14e0169dfef275d4aa58081e2ddb8f434ccf45c4c1800f2057caa0aa023",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000003/full/full/0/default.jpg"
+        },
+        "2": {
+          "sha256": "c6407e81a134c813d602bef6062ea562d128e848bdfce4469a5fd41b2518a660",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000002/full/full/0/default.jpg"
+        },
+        "46": {
+          "sha256": "bae04c7a9f49970e10dd0af2aeb352a22d6204c3d9433862776c66a5ce7122fc",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000046/full/full/0/default.jpg"
+        },
+        "45": {
+          "sha256": "6f667470660c2f948fbe1b69b4eee4576812012a8673bf18a992bab50c8558a1",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000045/full/full/0/default.jpg"
+        },
+        "44": {
+          "sha256": "267abf997ca7eef6362e90a94de87d6ea1c8bc708ac648a5d7b49cb8beb97436",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000044/full/full/0/default.jpg"
+        },
+        "14": {
+          "sha256": "b3eed02492248494887497741ec0be2849529dec65bfea74a9ed5ec61a7fc1f9",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000014/full/full/0/default.jpg"
+        },
+        "15": {
+          "sha256": "60ac1665d2e141a856d3444f466f8efdc589420c9cabae5b5668b4a28b71600a",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000015/full/full/0/default.jpg"
+        },
+        "5": {
+          "sha256": "13446cf13b7132ba85f72cfad275877475f86510e4fa29bc52059d0232c2c039",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000005/full/full/0/default.jpg"
+        },
+        "6": {
+          "sha256": "4c6823c95125d60eb05fb2893daa60372dc1cb137432a8d487feec25ce994fe5",
+          "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000006/full/full/0/default.jpg"
+        }
+      }
+    },
+    {
+      "id": "855851",
+      "manifest_url": "https://dl.ndl.go.jp/api/iiif/855851/manifest.json",
+      "manifest_sha256": "7413a2cce4df83f8649fb2f4c34608de6c34a466d23ad276d3aa5a878be5056d",
+      "metadata": [
+        {
+          "label": "Persistent ID",
+          "value": "info:ndljp/pid/855851"
+        },
+        {
+          "label": "Title",
+          "value": "雅楽集.篳篥譜"
+        },
+        {
+          "label": "Creator",
+          "value": "東儀文礼 編"
+        },
+        {
+          "label": "Publisher",
+          "value": "東儀文礼"
+        },
+        {
+          "label": "Publication Date",
+          "value": "明27.3"
+        },
+        {
+          "label": "Publication Date (W3CDTF fortmat)",
+          "value": "1894"
+        },
+        {
+          "label": "Call Number",
+          "value": "特57-543"
+        },
+        {
+          "label": "Bibliographic ID",
+          "value": "000000491318"
+        },
+        {
+          "label": "DOI",
+          "value": "10.11501/855851"
+        },
+        {
+          "label": "Access Restrictions",
+          "value": "PDM"
+        },
+        {
+          "label": "URL",
+          "value": "https://dl.ndl.go.jp/info:ndljp/pid/855851"
+        }
+      ],
+      "images": {
+        "10": {
+          "sha256": "38d941a1ab945018e9fb6f62d9be8deee22f4028d345d7e423ff38d31b463d9d",
+          "url": "https://dl.ndl.go.jp/api/iiif/855851/R0000010/full/full/0/default.jpg"
+        },
+        "11": {
+          "sha256": "84688e3302480d6ed9d706852bb5170cbca65f243c99389b54a7f1a2c9afd3e8",
+          "url": "https://dl.ndl.go.jp/api/iiif/855851/R0000011/full/full/0/default.jpg"
+        },
+        "13": {
+          "sha256": "b87b0c5a60c64375188f38ea5747537b1e5e47edd9faff1243e3b34690199a2e",
+          "url": "https://dl.ndl.go.jp/api/iiif/855851/R0000013/full/full/0/default.jpg"
+        },
+        "12": {
+          "sha256": "b371d5b4eaa166c62bf3c279a0168b683c7e28eaa5d77df0fe95a91392df68a6",
+          "url": "https://dl.ndl.go.jp/api/iiif/855851/R0000012/full/full/0/default.jpg"
+        },
+        "8": {
+          "sha256": "fec3d4283d2e2ad7006bd4f7c3d6406810863fdde1667dd69ffa62fe7fd45147",
+          "url": "https://dl.ndl.go.jp/api/iiif/855851/R0000008/full/full/0/default.jpg"
+        },
+        "9": {
+          "sha256": "9a088419fda1ea989e882d24eac2ef9d4d64c6d6c30432747fadb04dc5ba8c3e",
+          "url": "https://dl.ndl.go.jp/api/iiif/855851/R0000009/full/full/0/default.jpg"
+        },
+        "15": {
+          "sha256": "ed5d5e10c94253131c795d596ea3ec5f48e5659e44e84e665ce4c8f2fa3c9b4b",
+          "url": "https://dl.ndl.go.jp/api/iiif/855851/R0000015/full/full/0/default.jpg"
+        },
+        "14": {
+          "sha256": "0fa04c33fff48aa4dd67d9683cf049a7d80cc4bef607e377be86f8127d9d0b1a",
+          "url": "https://dl.ndl.go.jp/api/iiif/855851/R0000014/full/full/0/default.jpg"
+        }
+      }
+    },
+    {
+      "id": "855852",
+      "manifest_url": "https://dl.ndl.go.jp/api/iiif/855852/manifest.json",
+      "manifest_sha256": "21b5af6dcfc07f81ae4e8e2e9e2d2c9c770605bb36bff8c5add8ce9f6816ee9d",
+      "metadata": [
+        {
+          "label": "Persistent ID",
+          "value": "info:ndljp/pid/855852"
+        },
+        {
+          "label": "Title",
+          "value": "雅楽集.竜笛譜"
+        },
+        {
+          "label": "Creator",
+          "value": "東儀文礼 編"
+        },
+        {
+          "label": "Publisher",
+          "value": "東儀文礼"
+        },
+        {
+          "label": "Publication Date",
+          "value": "明27.3"
+        },
+        {
+          "label": "Publication Date (W3CDTF fortmat)",
+          "value": "1894"
+        },
+        {
+          "label": "Call Number",
+          "value": "特57-543"
+        },
+        {
+          "label": "Bibliographic ID",
+          "value": "000000491318"
+        },
+        {
+          "label": "DOI",
+          "value": "10.11501/855852"
+        },
+        {
+          "label": "Access Restrictions",
+          "value": "PDM"
+        },
+        {
+          "label": "URL",
+          "value": "https://dl.ndl.go.jp/info:ndljp/pid/855852"
+        }
+      ],
+      "images": {
+        "14": {
+          "sha256": "173363c2a46ca517d06f6314a842a202ce95218e1e8caf62fa29db529a0779a0",
+          "url": "https://dl.ndl.go.jp/api/iiif/855852/R0000014/full/full/0/default.jpg"
+        },
+        "15": {
+          "sha256": "a65100844019c50282dd59e27beca4fff33c5ce50f23949229809cac86156145",
+          "url": "https://dl.ndl.go.jp/api/iiif/855852/R0000015/full/full/0/default.jpg"
+        },
+        "11": {
+          "sha256": "14ae93b996a181070ebce4bcd6f4a8df8f62558104926933e5f7c0720bfad1b9",
+          "url": "https://dl.ndl.go.jp/api/iiif/855852/R0000011/full/full/0/default.jpg"
+        },
+        "10": {
+          "sha256": "96862fd6ac6110c9af2f9cbf9089095891700339185b5bf798ddc7cac5387245",
+          "url": "https://dl.ndl.go.jp/api/iiif/855852/R0000010/full/full/0/default.jpg"
+        },
+        "12": {
+          "sha256": "19dfb2e4416b256a5d4252ad67f2891778f6a30584a61951adb4057010d5e367",
+          "url": "https://dl.ndl.go.jp/api/iiif/855852/R0000012/full/full/0/default.jpg"
+        },
+        "13": {
+          "sha256": "e56f791f4a9ca8b0c2f8d9c0ee8dc6c50b15e3f6b0c5de28ffd0a00a3e16b1e9",
+          "url": "https://dl.ndl.go.jp/api/iiif/855852/R0000013/full/full/0/default.jpg"
+        },
+        "9": {
+          "sha256": "cbaee49707799b6af3e47efbba1967bf5f96f113083a48ce9247ded66af3576d",
+          "url": "https://dl.ndl.go.jp/api/iiif/855852/R0000009/full/full/0/default.jpg"
+        },
+        "8": {
+          "sha256": "45480fcd1389073628b3ca5606a8b7ce4b357adaaf4339f19515e33bf77becc5",
+          "url": "https://dl.ndl.go.jp/api/iiif/855852/R0000008/full/full/0/default.jpg"
+        }
+      }
+    },
+    {
+      "id": "855853",
+      "manifest_url": "https://dl.ndl.go.jp/api/iiif/855853/manifest.json",
+      "manifest_sha256": "67328e613e40588f24834d9f1e1ad8922076e31173fe626a386550836e587a15",
+      "metadata": [
+        {
+          "label": "Persistent ID",
+          "value": "info:ndljp/pid/855853"
+        },
+        {
+          "label": "Title",
+          "value": "雅楽集.鳳笙譜"
+        },
+        {
+          "label": "Creator",
+          "value": "東儀文礼 編"
+        },
+        {
+          "label": "Publisher",
+          "value": "東儀文礼"
+        },
+        {
+          "label": "Publication Date",
+          "value": "明27.3"
+        },
+        {
+          "label": "Publication Date (W3CDTF fortmat)",
+          "value": "1894"
+        },
+        {
+          "label": "Call Number",
+          "value": "特57-543"
+        },
+        {
+          "label": "Bibliographic ID",
+          "value": "000000491318"
+        },
+        {
+          "label": "DOI",
+          "value": "10.11501/855853"
+        },
+        {
+          "label": "Access Restrictions",
+          "value": "PDM"
+        },
+        {
+          "label": "URL",
+          "value": "https://dl.ndl.go.jp/info:ndljp/pid/855853"
+        }
+      ],
+      "images": {
+        "5": {
+          "sha256": "034640a7bd75486b9618399822737e9ee4ff7db446d4b9a3cda36c56aafb6c63",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000005/full/full/0/default.jpg"
+        },
+        "4": {
+          "sha256": "49550555f89177c7eebc2d6a02345103a873532238a78125054fe74e00abbfe5",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000004/full/full/0/default.jpg"
+        },
+        "6": {
+          "sha256": "efc0fe9376ee590d156cb0caaaaf1368f60761c595b17cc20399a74a2bf41b12",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000006/full/full/0/default.jpg"
+        },
+        "7": {
+          "sha256": "e758711187d415b4fc74451ce2e86bc2fa0f50b6b268cfed0ae9e2c1af5ef38c",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000007/full/full/0/default.jpg"
+        },
+        "3": {
+          "sha256": "2bc12e79d8d8972e356082ab423c727e1064579d768e9f13412c061da3a67dea",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000003/full/full/0/default.jpg"
+        },
+        "2": {
+          "sha256": "2bb3b3a0db931968472e0fc90a8e9e0c3c2b2f89049084925d5540955fbebcae",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000002/full/full/0/default.jpg"
+        },
+        "25": {
+          "sha256": "06d1c2ea36b8926dfa4bc22993b80d48051a7016fa79ee09062392051115dcca",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000025/full/full/0/default.jpg"
+        },
+        "24": {
+          "sha256": "c893ec8e33a4f4e506b2b1d29132aa44aee7acf5cd9427a630690100b5cdae62",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000024/full/full/0/default.jpg"
+        },
+        "18": {
+          "sha256": "b6414bdd95f3c62347322f4e83350f0f3edffb23b82de26b7adac5c31a653af8",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000018/full/full/0/default.jpg"
+        },
+        "15": {
+          "sha256": "512e5979ebf4d790ad23faeccf29929e9ac60a88c9a3aa389af84ba3f5f85553",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000015/full/full/0/default.jpg"
+        },
+        "14": {
+          "sha256": "c2d817dbe208384f28d56b6422fab58bd5ba93d1dbb75aeec4b074b12c2f06b6",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000014/full/full/0/default.jpg"
+        },
+        "16": {
+          "sha256": "69be5a9edb19a3d5fd016e01b8cbfeca397816b0345e5be750467a6c074461c6",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000016/full/full/0/default.jpg"
+        },
+        "17": {
+          "sha256": "7d62ab09707aacc20f7568d48a91770847dabf360d20a37e244cf3c62cf81541",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000017/full/full/0/default.jpg"
+        },
+        "13": {
+          "sha256": "4bd831d7ae077726b03067deda5494eeea3f23cbef91f52fff10804810ab6b67",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000013/full/full/0/default.jpg"
+        },
+        "12": {
+          "sha256": "d3bfe0ccb3977048a8b8731cd21bade4072806cdeea89a3a2de8838ac6bbf940",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000012/full/full/0/default.jpg"
+        },
+        "10": {
+          "sha256": "3d3116a254aa9888fa664254aab29facdff2f4c5861a9743c80ac2bd60c3330f",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000010/full/full/0/default.jpg"
+        },
+        "9": {
+          "sha256": "d300b8d0964caa90519769ad5837ff113b239a6ab674245efa58cc111e4e7de6",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000009/full/full/0/default.jpg"
+        },
+        "8": {
+          "sha256": "2b2a2677e2077e5ff299ca03f83814b4b5d95c5e420cabc4abd496adcb1c31e9",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000008/full/full/0/default.jpg"
+        },
+        "11": {
+          "sha256": "639878406a7ccb053afc938c55e27e08769bf32bb415ef7afa66ef7f3c74c420",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000011/full/full/0/default.jpg"
+        },
+        "20": {
+          "sha256": "21740d106ebaa0799244116adae18996b35e22373e36de5154cc530351aa7641",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000020/full/full/0/default.jpg"
+        },
+        "21": {
+          "sha256": "3f14f741d09b7cecdd82b04a77c36b96778374750843feef9aa8f03afbb7f097",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000021/full/full/0/default.jpg"
+        },
+        "23": {
+          "sha256": "aca1483349567459683a91f531ebb8079f7a223d61ba26c62caa5831de154d44",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000023/full/full/0/default.jpg"
+        },
+        "22": {
+          "sha256": "365c3c0f491737d1cf37f930300305eab6e6af65dc83484fa9616c8c5f5fdbfb",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000022/full/full/0/default.jpg"
+        },
+        "26": {
+          "sha256": "13ba3e45f8eaa71f22deb203fa5c03cff35bcc1ec094aa328850dbe297f8947b",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000026/full/full/0/default.jpg"
+        },
+        "27": {
+          "sha256": "2f5e1589506ef9211d5012bf2c5da9303747f611cdbd946ffb791fdf2e2df757",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000027/full/full/0/default.jpg"
+        },
+        "19": {
+          "sha256": "e90740f00c5e628bfe64ae8099ba33daf62d009f7b5b8dfbbd9c42e879c8cdb8",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000019/full/full/0/default.jpg"
+        },
+        "31": {
+          "sha256": "49215db1140afb1d9b7a9e70bdbfb8bb1cf8693c68432c063c60ef90f64b00f2",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000031/full/full/0/default.jpg"
+        },
+        "30": {
+          "sha256": "7f599455c4b552dcc2f48097f54a86ddad9eed76a4a9294f0a8f76fe69b0f1fb",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000030/full/full/0/default.jpg"
+        },
+        "29": {
+          "sha256": "1845e814d80a3ca1583f7d271b6c26011026d7239ef4c8a1ddf2992bc7b80a6a",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000029/full/full/0/default.jpg"
+        },
+        "28": {
+          "sha256": "d066fa65a9c45ce85efa3b3ab549923a6dbd06d0c39b0f9712f2342d0cd881a1",
+          "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000028/full/full/0/default.jpg"
+        }
+      }
+    }
+  ],
+  "note": "Image inventory includes downloaded but unread pages; visual review is recorded separately in score-reading.md. No OCR used."
+}

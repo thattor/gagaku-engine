@@ -1,0 +1,106 @@
+{
+  "work": "平調 五常楽急",
+  "scope": "Source metadata and research supplied for issue #50; no transcription or audio data",
+  "score_sources": [
+    {
+      "instrument": "hichiriki",
+      "title": "篳篥譜 初之巻",
+      "editor": "雅楽講究会",
+      "year": 1932,
+      "doi": "10.11501/1192011",
+      "commons_file": "NDL1192011_篳篥譜_初之巻.pdf",
+      "url": "https://commons.wikimedia.org/wiki/File:NDL1192011_篳篥譜_初之巻.pdf",
+      "rights_status": "public_domain_confirmed_on_commons",
+      "rights_evidence": "Commons PD-scan / PD-Japan-expired notice; source DOI 10.11501/1192011"
+    },
+    {
+      "instrument": "ryuteki",
+      "title": "竜笛譜 初之巻",
+      "editor": "雅楽講究会",
+      "year": 1932,
+      "doi": "10.11501/1194354",
+      "commons_file": "NDL1194354_竜笛譜_初之巻.pdf",
+      "url": "https://commons.wikimedia.org/wiki/File:NDL1194354_竜笛譜_初之巻.pdf",
+      "rights_status": "pdm_confirmed_by_ndl",
+      "ndl_url": "https://ndlsearch.ndl.go.jp/books/R100000039-I1194354",
+      "rights_evidence": "NDL copyright information: pdm; Commons also marks the scan public domain"
+    },
+    {
+      "instrument": "sho",
+      "title": "鳳笙譜 初之巻",
+      "editor": "雅楽講究会",
+      "year": 1932,
+      "doi": "10.11501/1192407",
+      "commons_file": "NDL1192407_鳳笙譜_初之巻.pdf",
+      "url": "https://commons.wikimedia.org/wiki/File:NDL1192407_鳳笙譜_初之巻.pdf",
+      "rights_status": "pdm_confirmed_by_ndl",
+      "ndl_url": "https://ndlsearch.ndl.go.jp/books/R100000039-I1192407",
+      "rights_evidence": "NDL copyright information: pdm"
+    }
+  ],
+  "observations": [
+    {
+      "claim": "Goshouraku-kyu score headings visibly say 小曲・早八拍子・拍子八",
+      "basis": "1932 score sources above",
+      "use": "context only; no duration or beat grid inferred"
+    },
+    {
+      "claim": "Kunitachi College syllabus teaches Goshouraku-kyu as four lines",
+      "basis": "Kunitachi College syllabus, as supplied in issue research",
+      "source_locator": "https://www.kunitachi.ac.jp/documents/education/syllabus/2022/2022_undergraduate.pdf",
+      "use": "four symbolic line slots"
+    },
+    {
+      "claim": "Modern teaching references separately teach Ryuteki 二返 and 止手",
+      "basis": "日本文化興隆財団『はじめての雅楽』商品説明",
+      "example_url": "https://www.nihonbunka.or.jp/item/detail/100238",
+      "use": "comparison only; never a transcription source"
+    },
+    {
+      "claim": "Return need not be an identical audio loop; Ryuteki may change register",
+      "basis": "secondary research supplied in issue research",
+      "source_locator": null,
+      "status": "exact return and part differences unverified",
+      "use": "distinct symbolic return variant, no invented notes"
+    },
+    {
+      "claim": "Tomede is a coda-like ending practice",
+      "basis": "Stanford Gagaku project + 日本文化興隆財団",
+      "source_locator": "https://gagaku.stanford.edu/jp/theory/form/",
+      "status": "exact notes and entry boundaries unverified",
+      "use": "symbolic state only"
+    },
+    {
+      "claim": "The PD score scans visibly contain explicit 二返 markings; the Ryuteki score also shows 初度用之 beside an additional notation column",
+      "basis": "direct visual inspection of the 1932 PD score scans",
+      "status": "markings verified; exact musical semantics and note-level realization remain unverified",
+      "use": "require pass/return variants in the player model instead of assuming an identical audio loop"
+    }
+  ],
+  "reference_sources": [
+    {
+      "claim": "Goshouraku-kyu is taught as four lines (1-2, then 3-4)",
+      "url": "https://www.kunitachi.ac.jp/documents/education/syllabus/2022/2022_undergraduate.pdf",
+      "role": "formal-structure corroboration only",
+      "copy_policy": "do not copy modern teaching notation"
+    },
+    {
+      "claim": "Tomede is used to stop ensemble performance in the middle of a piece; the teaching recording uses nonstandard kuruma-buki for Goshouraku-kyu",
+      "url": "https://www.nihonbunka.or.jp/item/detail/100238",
+      "role": "practice/reference only",
+      "copy_policy": "do not copy the recording or modern teaching material"
+    },
+    {
+      "claim": "Tomede functions as a coda-like ending; return/henzuke are formal repeat concepts",
+      "url": "https://gagaku.stanford.edu/jp/theory/form/",
+      "role": "formal-practice reference only",
+      "copy_policy": "conceptual reference only"
+    },
+    {
+      "claim": "A 1994 commercial recording catalog lists Hyojo Goshouraku-kyu and separate Hyojo rinji-tomede tracks",
+      "url": "https://ndlsearch.ndl.go.jp/books/R100000002-I000009375566",
+      "role": "existence/classification evidence only",
+      "copy_policy": "recording is not a production source"
+    }
+  ]
+}

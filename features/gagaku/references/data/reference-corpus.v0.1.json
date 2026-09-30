@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1.0",
+  "purpose": "reference_metadata_only_no_audio_or_figures_stored",
+  "sources": {
+    "hikichi2003-jasa": {
+      "kind": "journal_article",
+      "citation_text": "T. Hikichi, N. Osaka, F. Itakura, \"Time-domain simulation of sound production of the sho,\" Journal of the Acoustical Society of America, vol. 113, no. 2, pp. 1092-1101, 2003.",
+      "doi": "10.1121/1.1534605",
+      "doi_verification_status": "verified",
+      "publisher_or_venue": "Journal of the Acoustical Society of America (Acoustical Society of America / AIP Publishing)",
+      "retrieved_on": "2026-09-30",
+      "primary_source_rechecked": true
+    },
+    "freesound-680565": {
+      "kind": "field_recording",
+      "citation_text": "Freesound sound 680565, 'Hichiriki and sho at Japanese shrine,' https://freesound.org/people/gaijinbuzz/sounds/680565/ (uploader marks CC0 1.0)",
+      "doi": null,
+      "doi_verification_status": "not_applicable",
+      "publisher_or_venue": "Freesound",
+      "retrieved_on": "2026-09-30",
+      "primary_source_rechecked": true
+    }
+  },
+  "entries": [
+    {
+      "entry_id": "sho-ichi-hikichi2003",
+      "instrument": "sho",
+      "pitch_or_fingering": "一 (ichi), B4, measured sounding frequency 483.7 Hz in the source experiment",
+      "technique": "sustained single-pipe tone (単音), isolated from any aitake chord, as used for system-identification / physical-modeling analysis",
+      "source_ref": "hikichi2003-jasa",
+      "performer": null,
+      "recording_date": null,
+      "recording_environment": null,
+      "rights_category": "unclear_or_prohibited",
+      "analysis_permission": "unknown",
+      "production_permission": "not_granted",
+      "raw_audio_included": false,
+      "evidence": {"status": "verified", "source_ref": "hikichi2003-jasa", "checked_on": "2026-09-30"},
+      "notes": "Bibliographic DOI and ichi-pipe measurement checked against PubMed PMID 12597202 and the author-uploaded full article. The paper reports measurements but provides no reusable raw WAV here. No audio, figures, or article text is copied into this repository. Recording analysis and production permissions remain unconfirmed."
+    },
+    {
+      "entry_id": "sho-ensemble-freesound-680565",
+      "instrument": "sho",
+      "pitch_or_fingering": null,
+      "technique": "Unidentified live ensemble passage with hichiriki and sho; not an isolated ichi B4 note",
+      "source_ref": "freesound-680565",
+      "performer": null,
+      "recording_date": null,
+      "recording_environment": "Shrine wedding field recording; background footsteps and voices; 33.4-second stereo MP3",
+      "rights_category": "unclear_or_prohibited",
+      "analysis_permission": "unknown",
+      "production_permission": "not_granted",
+      "raw_audio_included": false,
+      "evidence": {"status": "verified", "source_ref": "freesound-680565", "checked_on": "2026-09-30"},
+      "notes": "Uploader labels the recording CC0 1.0, but unidentified performers and audible voices leave third-party/privacy rights unresolved. No raw audio is copied here. Pitch, pipe, and technique are unknown, so this cannot serve as a real-vs-real ichi B4 reference."
+    }
+  ]
+}

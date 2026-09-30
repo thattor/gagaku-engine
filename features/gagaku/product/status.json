@@ -1,0 +1,52 @@
+{
+  "version": "product-status-v1",
+  "goal": "PRODUCT_GOAL_V1",
+  "overall": "IMPLEMENTATION_INCOMPLETE",
+  "R": {
+    "status": "UNVERIFIED",
+    "diagnostic": "Independent physical generators and own input only; no restricted media copied",
+    "missing": "Full release score route; PD metadata and independently generated preview path recorded in rights.json"
+  },
+  "M": {
+    "status": "BLOCKED",
+    "missing": "Verified complete three-part transcription, first/return directives, tomede and musical exit"
+  },
+  "A": {
+    "status": "UNVERIFIED",
+    "diagnostic": "Real sho-derived bank, generic jet/reed candidate, stems, direct mix and WAV connections implemented",
+    "missing": "Ryuteki register/ornaments, metric and sho hand-shifts unverified; full-score coverage and timbre acceptance unavailable"
+  },
+  "E": {
+    "status": "BLOCKED",
+    "diagnostic": "Real 5/10/20 minute diagnostic audio and 1000 seeded symbolic finish-request cases",
+    "missing": "Verified Goshouraku-kyu exit/tomede with real audio"
+  },
+  "P": {
+    "status": "PARTIAL",
+    "diagnostic": "48kHz PCM WAV/stems/raw, browser player, independent fixture, gain, source/input/goal hashes, reproducible commands",
+    "missing": "Same accepted musical release candidate",
+    "score_preview": "Five WAVs, three raw gzip banks and events byte-identical on separate rerender; pinned score image retrieval verified; same accepted musical release candidate still unavailable"
+  },
+  "U": {
+    "status": "UNEVALUATED",
+    "missing": "User answers to four questions on a complete candidate; diagnostic listening is not U"
+  },
+  "research_status": "Existing research evaluation and thresholds unchanged. Product source choice does not turn historical FAIL or UNVERIFIED into PASS.",
+  "decision": "Preview is concrete progress, not goal completion. PRODUCT_GOAL_V1 and research gates unchanged; M/E/U cannot pass on reduced excerpts.",
+  "score_progress": {
+    "body_primary_cells_required": 96,
+    "body_primary_cells_notation_checked": 46,
+    "body_primary_cells_pitch_checked": 37,
+    "complete_performance_events_verified": 0,
+    "complete_performance_events_required": null,
+    "required_total_reason": "Secondary ornaments, breath/hand shifts, pass variants and tomede still require enumeration; 96 is a body-primary-cell floor, NOT event denominator",
+    "preview_prefix_realizations": 46,
+    "rendered_preview_primary_cells": 15,
+    "unread_sho_cells": [
+      "sho.L3.P6",
+      "sho.L4.P3"
+    ],
+    "full_candidate_available": false
+  },
+  "score_preview": "score-fixture.json; output/goshouraku-score; 30-second three-part preview and 192-second incomplete sho reading"
+}

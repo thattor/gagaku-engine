@@ -1,0 +1,134 @@
+{
+  "version": "product-rights-v1",
+  "production_allowlist": [
+    "own-diagnostic-input",
+    "own-physical-generators",
+    "own-physical-bank"
+  ],
+  "materials": [
+    {
+      "id": "own-diagnostic-input",
+      "status": "verified",
+      "use": "production_diagnostic",
+      "source": "fixture.json",
+      "basis": "Independently authored synthetic engineering stimuli; no score transcription or recording copied",
+      "transform": "MIDI event schedule"
+    },
+    {
+      "id": "own-physical-generators",
+      "status": "verified",
+      "use": "production_diagnostic",
+      "source": "models.py and PR56 sho_one_pipe.py",
+      "basis": "Independent implementation of physical equations; no third-party code/audio copied",
+      "transform": "pressure samples; all parameters are literature_model_value or timbre_design, not measured identification"
+    },
+    {
+      "id": "own-physical-bank",
+      "status": "verified",
+      "use": "production_diagnostic",
+      "source": "generated from own-physical-generators",
+      "basis": "Generated raw pressure, independent phase folding and resampling",
+      "transform": "32-period averaging, DC removal, listening gain, envelope, direct stereo mix; no third-party samples or impulse responses"
+    },
+    {
+      "id": "hikichi-2003",
+      "status": "verified",
+      "use": "reference_facts_only",
+      "source": "https://doi.org/10.1121/1.1534605",
+      "basis": "Physical facts/equations independently implemented; protected prose/figures/code/audio excluded"
+    },
+    {
+      "id": "jet-physics",
+      "status": "verified",
+      "use": "reference_facts_only",
+      "source": "https://euphonics.org/11-8-1-the-jet-drive-model-for-a-recorder-or-flute/",
+      "basis": "Physical equations independently implemented; website CC BY-NC-SA expression is not production material"
+    },
+    {
+      "id": "reed-physics",
+      "status": "verified",
+      "use": "reference_facts_only",
+      "source": "https://euphonics.org/11-3-1-modelling-the-clarinet-mouthpiece/",
+      "basis": "Bernoulli valve/oscillator equations independently implemented; protected expression excluded; generic model not hichiriki identification"
+    },
+    {
+      "id": "stanford-instruments",
+      "status": "verified",
+      "use": "reference_facts_only",
+      "source": "https://gagaku.stanford.edu/en/woodwinds/sho/",
+      "basis": "Instrument facts only; no published audio, diagrams, performance data or score expression enters artifacts"
+    },
+    {
+      "id": "ndl-sho-1932",
+      "status": "source_rights_verified",
+      "use": "score_preview",
+      "source": "https://dl.ndl.go.jp/pid/1192407",
+      "edition": "雅楽講究会 1932 鳳笙譜",
+      "pages": "printed17-18; canvas14-15",
+      "basis": "NDL manifest PDM label recorded with hash in score-sources.json; own transcription from visually inspected historical score. Musical completeness is separately unverified."
+    },
+    {
+      "id": "ndl-ryuteki-1932",
+      "status": "source_rights_verified",
+      "use": "score_preview",
+      "source": "https://dl.ndl.go.jp/pid/1194354",
+      "edition": "雅楽講究会 1932 竜笛譜",
+      "pages": "printed17-18; canvas14-15",
+      "basis": "NDL manifest PDM label recorded with hash in score-sources.json; own transcription from visually inspected historical score. Musical completeness is separately unverified."
+    },
+    {
+      "id": "ndl-hichiriki-1932",
+      "status": "source_rights_verified",
+      "use": "score_preview",
+      "source": "https://dl.ndl.go.jp/pid/1192011",
+      "edition": "雅楽講究会 1932 篳篥譜",
+      "pages": "printed17-18; canvas14-15",
+      "basis": "NDL manifest PDM label recorded with hash in score-sources.json; own transcription from visually inspected historical score. Musical completeness is separately unverified."
+    },
+    {
+      "id": "dokushu-1923",
+      "status": "unverified",
+      "use": "not_used",
+      "source": "https://dl.ndl.go.jp/pid/1185419",
+      "basis": "Catalog only; IIIF unavailable. No login or restriction bypass; cannot verify ending"
+    },
+    {
+      "id": "ndl-togi-1894",
+      "status": "source_rights_verified",
+      "use": "score_preview_reading_rules",
+      "source": [
+        "https://dl.ndl.go.jp/pid/855851",
+        "https://dl.ndl.go.jp/pid/855852",
+        "https://dl.ndl.go.jp/pid/855853"
+      ],
+      "edition": "東儀文礼 雅楽集 1894; each manifest identifies PDM",
+      "basis": "Historical finger/chord/beat rules; no third-party recording or modern arrangement copied"
+    },
+    {
+      "id": "own-score-control",
+      "status": "verified",
+      "use": "score_preview",
+      "source": "score-fixture.json design; score_audio.py",
+      "basis": "Own tempo, subdivision, envelope, gain, A430 equal temperament and direct stereo mix are disclosed design choices; not verified traditional performance practice"
+    }
+  ],
+  "software": [
+    {
+      "name": "Python standard library",
+      "source": "https://docs.python.org/3/license.html",
+      "status": "verified",
+      "code_distribution": "PSF license notices apply to Python distribution; Python is not redistributed in this package",
+      "generated_audio": "No Python license obligation attaches to generated pressure/PCM output"
+    }
+  ],
+  "release_rights": "Diagnostic allowlist unchanged. Score previews additionally use historical NDL PDM score readings. No protected sound, samples, IRs, modern arrangement or extracted features. Complete product R remains UNVERIFIED; no new exclusivity claim or repository license change.",
+  "score_preview_allowlist": [
+    "own-physical-generators",
+    "own-physical-bank",
+    "ndl-sho-1932",
+    "ndl-ryuteki-1932",
+    "ndl-hichiriki-1932",
+    "ndl-togi-1894",
+    "own-score-control"
+  ]
+}

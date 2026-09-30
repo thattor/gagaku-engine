@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "goal_sha256": "a8276f443a95becd7e5a79ccf8827e42611a85eb8ceacef4d0d10049b8c92244",
+  "source_fixture_sha256": "cc9b7b9422b838a16dac18afef630bcbbcffda90658e7f5dd13cf3202b31238a",
+  "source_inventory_sha256": "84b01fab9637011809ade2f159bd7ed9eb93435027f4a639715ca2275bfb0130",
+  "tests": "27 gagaku regression tests PASS (Python3.12)",
+  "source_retrieval": "20 pinned source images SHA256 matched; visual review is separate in score-reading.md",
+  "audio_inspection": {
+    "engineering_checks": "PASS",
+    "musical_acceptance": "UNVERIFIED",
+    "product_E": "BLOCKED",
+    "user_listening": "UNEVALUATED",
+    "files": [
+      {
+        "file": "sho.wav",
+        "peak_pcm": 11277,
+        "sha256": "33d224d2f4b782f9daab9b10d44833f134b28fd09bd7cee2a0a6fb95bb0e7869"
+      },
+      {
+        "file": "ryuteki.wav",
+        "peak_pcm": 7007,
+        "sha256": "658d205a1751a83e814c2edcbad23a69ce7eac510b8285f30df76ae27fab7c65"
+      },
+      {
+        "file": "hichiriki.wav",
+        "peak_pcm": 3828,
+        "sha256": "f8507c99b4a870ec4f103f179580ddfe4cebf344972fe7fc98dc194a26100f37"
+      },
+      {
+        "file": "ensemble.wav",
+        "peak_pcm": 14326,
+        "sha256": "bb0897228a7d4865cbdc40e887cc405ef6f5c7da8dfba4df7b07626b92c9ff33"
+      },
+      {
+        "file": "sho-body-reading.wav",
+        "peak_pcm": 11277,
+        "sha256": "74d19cf28579450f707a25d59fc03879f8002b9ccad380dc9e6673a4db862b1c"
+      }
+    ],
+    "prefix_rendered_events": 46,
+    "explicit_unknown_gaps": [
+      {
+        "cell_id": "sho.L3.P6",
+        "start_seconds": 126.0,
+        "seconds": 6.0,
+        "reason": "unread compound chord; not replaced"
+      },
+      {
+        "cell_id": "sho.L4.P3",
+        "start_seconds": 156.0,
+        "seconds": 6.0,
+        "reason": "unread compound chord; not replaced"
+      }
+    ]
+  },
+  "reproducibility": {
+    "separate_output_directory": "byte-identical five WAVs, three raw gzip banks and event log",
+    "files": [
+      {
+        "file": "sho.wav",
+        "sha256": "33d224d2f4b782f9daab9b10d44833f134b28fd09bd7cee2a0a6fb95bb0e7869"
+      },
+      {
+        "file": "ryuteki.wav",
+        "sha256": "658d205a1751a83e814c2edcbad23a69ce7eac510b8285f30df76ae27fab7c65"
+      },
+      {
+        "file": "hichiriki.wav",
+        "sha256": "f8507c99b4a870ec4f103f179580ddfe4cebf344972fe7fc98dc194a26100f37"
+      },
+      {
+        "file": "ensemble.wav",
+        "sha256": "bb0897228a7d4865cbdc40e887cc405ef6f5c7da8dfba4df7b07626b92c9ff33"
+      },
+      {
+        "file": "sho-body-reading.wav",
+        "sha256": "74d19cf28579450f707a25d59fc03879f8002b9ccad380dc9e6673a4db862b1c"
+      }
+    ]
+  },
+  "browser": {
+    "url": "http://127.0.0.1:8766/player.html",
+    "all_five_media": "readyState4, duration30/30/30/30/192",
+    "ensemble_play": "paused=false currentTime0.085333 then currentTime7.84745; full end not observed",
+    "subjective_listening": "not performed; U UNEVALUATED"
+  },
+  "acceptance": "M/E BLOCKED, not product completion; no verified exit/tomede or 5/10/20 min real-score operations"
+}

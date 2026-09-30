@@ -1,0 +1,2184 @@
+{
+  "version": "goshouraku-score-preview-v1",
+  "work": "平調・五常楽急",
+  "edition": "雅楽講究会1932",
+  "scope": "First line, score-derived reduction; not a verified complete performance",
+  "cells": [
+    {
+      "id": "sho.L1.P1",
+      "symbol": "十",
+      "source": {
+        "id": "1192407",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 1,
+        "bbox_normalized": [
+          0.095,
+          0.16,
+          0.155,
+          0.247
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "下",
+        "十",
+        "行",
+        "七",
+        "上",
+        "八"
+      ],
+      "midi": [
+        78,
+        79,
+        81,
+        83,
+        86,
+        88
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 1,
+        "row": 1,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L1.P2",
+      "symbol": "行",
+      "source": {
+        "id": "1192407",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 2,
+        "bbox_normalized": [
+          0.095,
+          0.247,
+          0.155,
+          0.334
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 1,
+        "row": 2,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L1.P3",
+      "symbol": "下",
+      "source": {
+        "id": "1192407",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 3,
+        "bbox_normalized": [
+          0.095,
+          0.334,
+          0.155,
+          0.421
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "下",
+        "美",
+        "行",
+        "七",
+        "上",
+        "千"
+      ],
+      "midi": [
+        78,
+        80,
+        81,
+        83,
+        86,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 1,
+        "row": 3,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L1.P4",
+      "symbol": "十",
+      "source": {
+        "id": "1192407",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 4,
+        "bbox_normalized": [
+          0.095,
+          0.421,
+          0.155,
+          0.508
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "下",
+        "十",
+        "行",
+        "七",
+        "上",
+        "八"
+      ],
+      "midi": [
+        78,
+        79,
+        81,
+        83,
+        86,
+        88
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 1,
+        "row": 4,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L1.P5",
+      "symbol": "乙",
+      "source": {
+        "id": "1192407",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 5,
+        "bbox_normalized": [
+          0.095,
+          0.508,
+          0.155,
+          0.595
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乙",
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        76,
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 1,
+        "row": 5,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L1.P6",
+      "symbol": "乙",
+      "source": {
+        "id": "1192407",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 6,
+        "bbox_normalized": [
+          0.095,
+          0.595,
+          0.155,
+          0.682
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乙",
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        76,
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 1,
+        "row": 6,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L1.P7",
+      "symbol": "下",
+      "source": {
+        "id": "1192407",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 7,
+        "bbox_normalized": [
+          0.095,
+          0.682,
+          0.155,
+          0.769
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "下",
+        "美",
+        "行",
+        "七",
+        "上",
+        "千"
+      ],
+      "midi": [
+        78,
+        80,
+        81,
+        83,
+        86,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 1,
+        "row": 7,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L1.P8",
+      "symbol": "十",
+      "source": {
+        "id": "1192407",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 8,
+        "bbox_normalized": [
+          0.095,
+          0.769,
+          0.155,
+          0.856
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "下",
+        "十",
+        "行",
+        "七",
+        "上",
+        "八"
+      ],
+      "midi": [
+        78,
+        79,
+        81,
+        83,
+        86,
+        88
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 1,
+        "row": 8,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L2.P1",
+      "symbol": "乙",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-rightmost",
+        "row": 1,
+        "bbox_normalized": [
+          0.84,
+          0.16,
+          0.9,
+          0.248
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乙",
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        76,
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 2,
+        "row": 1,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L2.P2",
+      "symbol": "乙",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-rightmost",
+        "row": 2,
+        "bbox_normalized": [
+          0.84,
+          0.248,
+          0.9,
+          0.336
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乙",
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        76,
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 2,
+        "row": 2,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L2.P3",
+      "symbol": "工",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-rightmost",
+        "row": 3,
+        "bbox_normalized": [
+          0.84,
+          0.336,
+          0.9,
+          0.424
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "工",
+        "凢",
+        "乙",
+        "美",
+        "行",
+        "七"
+      ],
+      "midi": [
+        73,
+        74,
+        76,
+        80,
+        81,
+        83
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 2,
+        "row": 3,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L2.P4",
+      "symbol": "九",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-rightmost",
+        "row": 4,
+        "bbox_normalized": [
+          0.84,
+          0.424,
+          0.9,
+          0.512
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乞",
+        "乙",
+        "行",
+        "七",
+        "八",
+        "千"
+      ],
+      "midi": [
+        69,
+        76,
+        81,
+        83,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 2,
+        "row": 4,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L2.P5",
+      "symbol": "一",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-rightmost",
+        "row": 5,
+        "bbox_normalized": [
+          0.84,
+          0.512,
+          0.9,
+          0.6
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "一",
+        "凢",
+        "乙",
+        "行",
+        "七",
+        "千"
+      ],
+      "midi": [
+        71,
+        74,
+        76,
+        81,
+        83,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 2,
+        "row": 5,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L2.P6",
+      "symbol": "行",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-rightmost",
+        "row": 6,
+        "bbox_normalized": [
+          0.84,
+          0.6,
+          0.9,
+          0.688
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 2,
+        "row": 6,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L2.P7",
+      "symbol": "一",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-rightmost",
+        "row": 7,
+        "bbox_normalized": [
+          0.84,
+          0.688,
+          0.9,
+          0.776
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "一",
+        "凢",
+        "乙",
+        "行",
+        "七",
+        "千"
+      ],
+      "midi": [
+        71,
+        74,
+        76,
+        81,
+        83,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 2,
+        "row": 7,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L2.P8",
+      "symbol": "行",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-rightmost",
+        "row": 8,
+        "bbox_normalized": [
+          0.84,
+          0.776,
+          0.9,
+          0.864
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 2,
+        "row": 8,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L3.P1",
+      "symbol": "九",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-middle",
+        "row": 1,
+        "bbox_normalized": [
+          0.77,
+          0.16,
+          0.82,
+          0.248
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乞",
+        "乙",
+        "行",
+        "七",
+        "八",
+        "千"
+      ],
+      "midi": [
+        69,
+        76,
+        81,
+        83,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 3,
+        "row": 1,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L3.P2",
+      "symbol": "乙",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-middle",
+        "row": 2,
+        "bbox_normalized": [
+          0.77,
+          0.248,
+          0.82,
+          0.336
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乙",
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        76,
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 3,
+        "row": 2,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L3.P3",
+      "symbol": "九",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-middle",
+        "row": 3,
+        "bbox_normalized": [
+          0.77,
+          0.336,
+          0.82,
+          0.424
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乞",
+        "乙",
+        "行",
+        "七",
+        "八",
+        "千"
+      ],
+      "midi": [
+        69,
+        76,
+        81,
+        83,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 3,
+        "row": 3,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L3.P4",
+      "symbol": "一",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-middle",
+        "row": 4,
+        "bbox_normalized": [
+          0.77,
+          0.424,
+          0.82,
+          0.512
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "一",
+        "凢",
+        "乙",
+        "行",
+        "七",
+        "千"
+      ],
+      "midi": [
+        71,
+        74,
+        76,
+        81,
+        83,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 3,
+        "row": 4,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L3.P5",
+      "symbol": "一",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-middle",
+        "row": 5,
+        "bbox_normalized": [
+          0.77,
+          0.512,
+          0.82,
+          0.6
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "一",
+        "凢",
+        "乙",
+        "行",
+        "七",
+        "千"
+      ],
+      "midi": [
+        71,
+        74,
+        76,
+        81,
+        83,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 3,
+        "row": 5,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L3.P6",
+      "symbol": "九下",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-middle",
+        "row": 6,
+        "bbox_normalized": [
+          0.77,
+          0.6,
+          0.82,
+          0.688
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "unresolved",
+      "pipes": null,
+      "midi": null,
+      "pitch_status": "unresolved",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 3,
+        "row": 6,
+        "result": "same compound sign, expansion still unresolved"
+      }
+    },
+    {
+      "id": "sho.L3.P7",
+      "symbol": "十",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-middle",
+        "row": 7,
+        "bbox_normalized": [
+          0.77,
+          0.688,
+          0.82,
+          0.776
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "下",
+        "十",
+        "行",
+        "七",
+        "上",
+        "八"
+      ],
+      "midi": [
+        78,
+        79,
+        81,
+        83,
+        86,
+        88
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 3,
+        "row": 7,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L3.P8",
+      "symbol": "一",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-middle",
+        "row": 8,
+        "bbox_normalized": [
+          0.77,
+          0.776,
+          0.82,
+          0.864
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "一",
+        "凢",
+        "乙",
+        "行",
+        "七",
+        "千"
+      ],
+      "midi": [
+        71,
+        74,
+        76,
+        81,
+        83,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 3,
+        "row": 8,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L4.P1",
+      "symbol": "乙",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-leftmost",
+        "row": 1,
+        "bbox_normalized": [
+          0.69,
+          0.16,
+          0.74,
+          0.248
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乙",
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        76,
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 4,
+        "row": 1,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L4.P2",
+      "symbol": "九",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-leftmost",
+        "row": 2,
+        "bbox_normalized": [
+          0.69,
+          0.248,
+          0.74,
+          0.336
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乞",
+        "乙",
+        "行",
+        "七",
+        "八",
+        "千"
+      ],
+      "midi": [
+        69,
+        76,
+        81,
+        83,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 4,
+        "row": 2,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L4.P3",
+      "symbol": "九下",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-leftmost",
+        "row": 3,
+        "bbox_normalized": [
+          0.69,
+          0.336,
+          0.74,
+          0.424
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "unresolved",
+      "pipes": null,
+      "midi": null,
+      "pitch_status": "unresolved",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 4,
+        "row": 3,
+        "result": "same compound sign, expansion still unresolved"
+      }
+    },
+    {
+      "id": "sho.L4.P4",
+      "symbol": "乙",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-leftmost",
+        "row": 4,
+        "bbox_normalized": [
+          0.69,
+          0.424,
+          0.74,
+          0.512
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乙",
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        76,
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 4,
+        "row": 4,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L4.P5",
+      "symbol": "乙",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-leftmost",
+        "row": 5,
+        "bbox_normalized": [
+          0.69,
+          0.512,
+          0.74,
+          0.6
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乙",
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        76,
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 4,
+        "row": 5,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L4.P6",
+      "symbol": "行",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-leftmost",
+        "row": 6,
+        "bbox_normalized": [
+          0.69,
+          0.6,
+          0.74,
+          0.688
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 4,
+        "row": 6,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L4.P7",
+      "symbol": "乙",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-leftmost",
+        "row": 7,
+        "bbox_normalized": [
+          0.69,
+          0.688,
+          0.74,
+          0.776
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "乙",
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        76,
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 4,
+        "row": 7,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "sho.L4.P8",
+      "symbol": "行",
+      "source": {
+        "id": "1192407",
+        "canvas": 15,
+        "page": 18,
+        "column": "right-page-leftmost",
+        "row": 8,
+        "bbox_normalized": [
+          0.69,
+          0.776,
+          0.74,
+          0.864
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pipes": [
+        "行",
+        "七",
+        "上",
+        "八",
+        "千"
+      ],
+      "midi": [
+        81,
+        83,
+        86,
+        88,
+        90
+      ],
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "hand-shift-unverified",
+      "comparison_source": {
+        "id": "855853",
+        "canvas": 30,
+        "page": 21,
+        "column": 4,
+        "row": 8,
+        "result": "same main chord sign"
+      }
+    },
+    {
+      "id": "hichiriki.L1.P1",
+      "symbol": "テエル",
+      "finger_signs": [
+        "上",
+        "一"
+      ],
+      "midi": [
+        79,
+        78
+      ],
+      "offset_pulses": [
+        0,
+        2
+      ],
+      "source": {
+        "id": "1192011",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 1,
+        "bbox_normalized": [
+          0.095,
+          0.16,
+          0.17,
+          0.25
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855851",
+        "canvas": 14,
+        "page": 7,
+        "column": "left-page-leftmost",
+        "row": 1,
+        "result": "same opening shoga/finger sequence"
+      }
+    },
+    {
+      "id": "hichiriki.L1.P2",
+      "symbol": "レエ",
+      "finger_signs": [
+        "上"
+      ],
+      "midi": [
+        79
+      ],
+      "offset_pulses": [
+        0
+      ],
+      "source": {
+        "id": "1192011",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 2,
+        "bbox_normalized": [
+          0.095,
+          0.25,
+          0.17,
+          0.34
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855851",
+        "canvas": 14,
+        "page": 7,
+        "column": "left-page-leftmost",
+        "row": 2,
+        "result": "same opening shoga/finger sequence"
+      }
+    },
+    {
+      "id": "hichiriki.L1.P3",
+      "symbol": "タア",
+      "finger_signs": [
+        "一"
+      ],
+      "midi": [
+        78
+      ],
+      "offset_pulses": [
+        0
+      ],
+      "source": {
+        "id": "1192011",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 3,
+        "bbox_normalized": [
+          0.095,
+          0.34,
+          0.17,
+          0.43
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855851",
+        "canvas": 14,
+        "page": 7,
+        "column": "left-page-leftmost",
+        "row": 3,
+        "result": "same opening shoga/finger sequence"
+      }
+    },
+    {
+      "id": "hichiriki.L1.P4",
+      "symbol": "レエ",
+      "finger_signs": [
+        "上"
+      ],
+      "midi": [
+        79
+      ],
+      "offset_pulses": [
+        0
+      ],
+      "source": {
+        "id": "1192011",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 4,
+        "bbox_normalized": [
+          0.095,
+          0.43,
+          0.17,
+          0.52
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855851",
+        "canvas": 14,
+        "page": 7,
+        "column": "left-page-leftmost",
+        "row": 4,
+        "result": "same opening shoga/finger sequence"
+      }
+    },
+    {
+      "id": "hichiriki.L1.P5",
+      "symbol": "タア",
+      "finger_signs": [
+        "四"
+      ],
+      "midi": [
+        76
+      ],
+      "offset_pulses": [
+        0
+      ],
+      "source": {
+        "id": "1192011",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 5,
+        "bbox_normalized": [
+          0.095,
+          0.52,
+          0.17,
+          0.61
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855851",
+        "canvas": 14,
+        "page": 7,
+        "column": "left-page-leftmost",
+        "row": 5,
+        "result": "same opening shoga/finger sequence"
+      }
+    },
+    {
+      "id": "hichiriki.L1.P6",
+      "symbol": "ハア",
+      "finger_signs": [
+        "ノ"
+      ],
+      "midi": [
+        76
+      ],
+      "offset_pulses": [
+        0
+      ],
+      "source": {
+        "id": "1192011",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 6,
+        "bbox_normalized": [
+          0.095,
+          0.61,
+          0.17,
+          0.7
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "interpretation",
+      "timing_status": "preview_design",
+      "technique_status": "unverified",
+      "comparison_source": {
+        "id": "855851",
+        "canvas": 14,
+        "page": 7,
+        "column": "left-page-leftmost",
+        "row": 6,
+        "result": "same opening shoga/finger sequence"
+      }
+    },
+    {
+      "id": "hichiriki.L1.P7",
+      "symbol": "タア",
+      "finger_signs": [
+        "一"
+      ],
+      "midi": [
+        78
+      ],
+      "offset_pulses": [
+        0
+      ],
+      "source": {
+        "id": "1192011",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 7,
+        "bbox_normalized": [
+          0.095,
+          0.7,
+          0.17,
+          0.79
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855851",
+        "canvas": 14,
+        "page": 7,
+        "column": "left-page-leftmost",
+        "row": 7,
+        "result": "same opening shoga/finger sequence"
+      }
+    },
+    {
+      "id": "hichiriki.L1.P8",
+      "symbol": "レエ",
+      "finger_signs": [
+        "上"
+      ],
+      "midi": [
+        79
+      ],
+      "offset_pulses": [
+        0
+      ],
+      "source": {
+        "id": "1192011",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 8,
+        "bbox_normalized": [
+          0.095,
+          0.79,
+          0.17,
+          0.88
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "verified",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855851",
+        "canvas": 14,
+        "page": 7,
+        "column": "left-page-leftmost",
+        "row": 8,
+        "result": "same opening shoga/finger sequence"
+      }
+    },
+    {
+      "id": "ryuteki.L1.P1",
+      "symbol": "タア",
+      "finger_signs": [
+        "干"
+      ],
+      "midi": [
+        76
+      ],
+      "offset_pulses": [
+        0
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 1,
+        "bbox_normalized": [
+          0.18,
+          0.13,
+          0.27,
+          0.224
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "interpretation",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855852",
+        "canvas": 14,
+        "page": 6,
+        "column": "right-page-leftmost through left-page columns",
+        "result": "similar passages; 1894 return variant layout differs; not a note-for-note independent certification"
+      }
+    },
+    {
+      "id": "ryuteki.L1.P2",
+      "symbol": "延引アロラアリ",
+      "finger_signs": [
+        "由",
+        "六",
+        "干",
+        "六"
+      ],
+      "midi": [
+        76,
+        86,
+        76,
+        86
+      ],
+      "offset_pulses": [
+        0,
+        2.5,
+        3,
+        3.5
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 2,
+        "bbox_normalized": [
+          0.18,
+          0.224,
+          0.27,
+          0.318
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "interpretation",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855852",
+        "canvas": 14,
+        "page": 6,
+        "column": "right-page-leftmost through left-page columns",
+        "result": "similar passages; 1894 return variant layout differs; not a note-for-note independent certification"
+      }
+    },
+    {
+      "id": "ryuteki.L1.P3",
+      "symbol": "ロヲ",
+      "finger_signs": [
+        "中"
+      ],
+      "midi": [
+        83
+      ],
+      "offset_pulses": [
+        0
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 3,
+        "bbox_normalized": [
+          0.18,
+          0.318,
+          0.27,
+          0.412
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "interpretation",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855852",
+        "canvas": 14,
+        "page": 6,
+        "column": "right-page-leftmost through left-page columns",
+        "result": "similar passages; 1894 return variant layout differs; not a note-for-note independent certification"
+      }
+    },
+    {
+      "id": "ryuteki.L1.P4",
+      "symbol": "延引ロ",
+      "finger_signs": [
+        "由",
+        "六"
+      ],
+      "midi": [
+        83,
+        86
+      ],
+      "offset_pulses": [
+        0,
+        2
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 4,
+        "bbox_normalized": [
+          0.18,
+          0.412,
+          0.27,
+          0.506
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "interpretation",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855852",
+        "canvas": 14,
+        "page": 6,
+        "column": "right-page-leftmost through left-page columns",
+        "result": "similar passages; 1894 return variant layout differs; not a note-for-note independent certification"
+      }
+    },
+    {
+      "id": "ryuteki.L1.P5",
+      "symbol": "チイイヤ",
+      "finger_signs": [
+        "五",
+        "上",
+        "五"
+      ],
+      "midi": [
+        78,
+        79,
+        78
+      ],
+      "offset_pulses": [
+        0,
+        1.5,
+        2.5
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 5,
+        "bbox_normalized": [
+          0.18,
+          0.506,
+          0.27,
+          0.6
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "interpretation",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855852",
+        "canvas": 14,
+        "page": 6,
+        "column": "right-page-leftmost through left-page columns",
+        "result": "similar passages; 1894 return variant layout differs; not a note-for-note independent certification"
+      }
+    },
+    {
+      "id": "ryuteki.L1.P6",
+      "symbol": "タア",
+      "finger_signs": [
+        "干"
+      ],
+      "midi": [
+        76
+      ],
+      "offset_pulses": [
+        0
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 6,
+        "bbox_normalized": [
+          0.18,
+          0.6,
+          0.27,
+          0.694
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "interpretation",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855852",
+        "canvas": 14,
+        "page": 6,
+        "column": "right-page-leftmost through left-page columns",
+        "result": "similar passages; 1894 return variant layout differs; not a note-for-note independent certification"
+      }
+    },
+    {
+      "id": "ryuteki.L1.P7",
+      "symbol": "ハア",
+      "finger_signs": [
+        "く"
+      ],
+      "midi": [
+        76
+      ],
+      "offset_pulses": [
+        0
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 7,
+        "bbox_normalized": [
+          0.18,
+          0.694,
+          0.27,
+          0.788
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "interpretation",
+      "timing_status": "preview_design",
+      "technique_status": "unverified",
+      "comparison_source": {
+        "id": "855852",
+        "canvas": 14,
+        "page": 6,
+        "column": "right-page-leftmost through left-page columns",
+        "result": "similar passages; 1894 return variant layout differs; not a note-for-note independent certification"
+      }
+    },
+    {
+      "id": "ryuteki.L1.P8",
+      "symbol": "延引",
+      "finger_signs": [
+        "由"
+      ],
+      "midi": [
+        76
+      ],
+      "offset_pulses": [
+        0
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 14,
+        "page": 17,
+        "column": "left-page-leftmost",
+        "row": 8,
+        "bbox_normalized": [
+          0.18,
+          0.788,
+          0.27,
+          0.882
+        ],
+        "bbox_note": "Approximate manual region in full canvas; x0,y0,x1,y1 normalized, top-left origin"
+      },
+      "notation_status": "verified",
+      "pitch_status": "interpretation",
+      "timing_status": "preview_design",
+      "technique_status": "preview_design",
+      "comparison_source": {
+        "id": "855852",
+        "canvas": 14,
+        "page": 6,
+        "column": "right-page-leftmost through left-page columns",
+        "result": "similar passages; 1894 return variant layout differs; not a note-for-note independent certification"
+      }
+    }
+  ],
+  "pipe_midi": {
+    "下": 78,
+    "十": 79,
+    "行": 81,
+    "七": 83,
+    "上": 86,
+    "八": 88,
+    "千": 90,
+    "美": 80,
+    "乙": 76,
+    "乞": 69,
+    "一": 71,
+    "凢": 74,
+    "工": 73
+  },
+  "chords": {
+    "十": [
+      "下",
+      "十",
+      "行",
+      "七",
+      "上",
+      "八"
+    ],
+    "行": [
+      "行",
+      "七",
+      "上",
+      "八",
+      "千"
+    ],
+    "下": [
+      "下",
+      "美",
+      "行",
+      "七",
+      "上",
+      "千"
+    ],
+    "乙": [
+      "乙",
+      "行",
+      "七",
+      "上",
+      "八",
+      "千"
+    ],
+    "九": [
+      "乞",
+      "乙",
+      "行",
+      "七",
+      "八",
+      "千"
+    ],
+    "一": [
+      "一",
+      "凢",
+      "乙",
+      "行",
+      "七",
+      "千"
+    ],
+    "工": [
+      "工",
+      "凢",
+      "乙",
+      "美",
+      "行",
+      "七"
+    ]
+  },
+  "rules": {
+    "sho_chord": "855853 canvas11 right table + 12 right diagrams; 1192407 canvas7 right table; Stanford Fig6 pitch/octave cross-check facts only",
+    "hichiriki_pitch": "855851 canvas10 right 音穴唱歌發聲音字; octave interpreted using Stanford stated actual range",
+    "ryuteki_pitch": "855852 canvas9 left 開閉解 and canvas10 right 音穴唱歌發聲音字; register/ornaments unresolved",
+    "pulse": "855851 canvas11 left 小拍子 explains テエルレエ; 1932 red dots establish 8 primary cells/line. Four preview subdivisions/cell are a design pending complete metric verification."
+  },
+  "design": {
+    "a4_hz": 430,
+    "seconds_per_pulse": 1.5,
+    "pulses_per_cell": 4,
+    "attack_seconds": 0.15,
+    "release_seconds": 0.25,
+    "interior_offsets": "Author timing design; not verified oral tradition",
+    "sho_hand_shift": "Not realized; chord reduction only",
+    "tuning": "A430 equal-tempered approximation; traditional intervals not yet verified"
+  },
+  "ending": {
+    "status": "unverified",
+    "events": []
+  },
+  "directives": {
+    "first_pass": {
+      "source": "1194354 c15 p18 extra right column 初度用之",
+      "status": "unresolved",
+      "question": "Start/end of replacement and relation to 855852 c14 後度用之"
+    },
+    "return": {
+      "source": "all 1932 c15 p18 line2 and line4 bottom 二返",
+      "status": "unresolved",
+      "question": "Repeat target, local two-pass vs whole-piece returns"
+    }
+  },
+  "production_ready": false
+}
