@@ -1,0 +1,23 @@
+name: Three-pipe body candidate
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  body:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest features.gagaku.product.test_three_pipe_body -v
+      - run: python -m features.gagaku.product.three_pipe_body --output-dir output/three-pipe-body-v1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: three-pipe-body-v1
+          path: output/three-pipe-body-v1
