@@ -68,6 +68,6 @@ class ContinuousCandidate(unittest.TestCase):
         for key,value in [('glyph_status','verified'),('sources',[{}])]:
             control=load_control(); control['extra_reading'][key]=value
             with self.assertRaises(ValueError): validate_control(control)
-        for key,value in [('reading_status','verified'),('reading_evidence',{}),('source',{}),('symbol','乙'),('part',2)]:
+        for key,value in [('reading_status','verified'),('reading_evidence',{}),('source',{}),('symbol','乙'),('part',2),('pipes',['下'])]:
             points=checkpoints('1932'); points[1][key]=value
             with self.assertRaises(ValueError): validate_checkpoints(points)
