@@ -1,0 +1,23 @@
+name: Sho listening candidate
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest features.gagaku.product.test_sho_listening -v
+      - run: python -m features.gagaku.product.sho_listening --output-dir output/sho-listening-v1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sho-listening-v1
+          path: output/sho-listening-v1
