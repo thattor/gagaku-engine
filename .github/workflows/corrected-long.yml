@@ -1,0 +1,27 @@
+name: Corrected three-pipe long candidate
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  corrected-long:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest features.gagaku.product.test_corrected_long -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node features/gagaku/product/test_corrected_long_player.cjs
+      - run: python -m features.gagaku.product.corrected_long --output-dir output/corrected-long-v1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: corrected-long-v1
+          path: output/corrected-long-v1
