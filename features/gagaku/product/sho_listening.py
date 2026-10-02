@@ -10,11 +10,13 @@ from features.gagaku.sho_one_pipe import render as physical_render
 from features.gagaku.evaluate import _estimate_f0
 
 DURATION = 18
-PITCH = {'乞':69, '一':71, '工':73, '凢':74, '乙':76, '下':78,
-         '十':79, '美':80, '行':81, '七':83, '上':86, '八':88, '千':90}
-CHORD = {'一':list('一凢乙行七千'), '乞':list('乞乙行七八千'),
-         '十':list('下十行七上八'), '下':list('下千行七上美'),
-         '乙':list('乙行七上八千'), '行':list('行七上八千')}
+from .sho_adoption import load_spec, build_body
+
+# Use the explicit adoption version; preserve the frozen baseline's 行 only
+# in the baseline comparison branch, not as an adopted continuation symbol.
+ADOPTION = load_spec()
+PITCH = ADOPTION['pipe_midi']
+CHORD = {**ADOPTION['chords'], '行':list('行七上八千')}
 
 
 def make_sho_bank():
@@ -42,7 +44,8 @@ def span(pipe, start, end, cell):
             'timing_status':'author_design','technique_status':'listening_hypothesis',
             'source': {'score_cell_ids': [cell.split('+')[0]] + ([cell.split('+')[0].rsplit('.',1)[0]+'.'+cell.split('+')[1]] if '+' in cell else []),
                        'adoption_record':'docs/tasks/sho-listening-v1/README.md',
-                       'sources':'docs/tasks/sho-listening-v1/sources.json'}}
+                       'sources':'docs/tasks/sho-listening-v1/sources.json',
+                       'adoption_version':'sho-adoption-v1'}}
 
 
 def chord(symbol,start,end,cell):
@@ -50,6 +53,9 @@ def chord(symbol,start,end,cell):
 
 
 def schedule(corrected):
+    # Refuse baseline drift and invalid adoption before using the corrected path.
+    if corrected:
+        build_body()
     # Four noncontiguous excerpts, each original preceding cell included.
     events=chord('一',0,3,'sho.L3.P5')+chord('乞',6,9,'sho.L4.P2')
     if corrected:
@@ -70,6 +76,11 @@ def schedule(corrected):
         # Frozen fixture has unresolved compounds => 3..6 and 9..12 silence.
         events += chord('一',12,13.5,'sho.L2.P5')+chord('行',13.5,15,'sho.L2.P6')
         events += chord('乙',15,16.5,'sho.L4.P5')+chord('行',16.5,18,'sho.L4.P6')
+    for event in events:
+        event['source']['interpretation_role']='corrected_candidate' if corrected else 'frozen_baseline_comparison'
+        if not corrected:
+            event['source']['adoption_version']='frozen-score-fixture'
+            event['source']['adoption_record']='features/gagaku/product/score-fixture.json'
     return events
 
 
@@ -132,9 +143,10 @@ def generate(out):
     report={'scope':'SHO_LISTENING_V1 / noncontiguous montage', 'duration_seconds':DURATION,
             'source_commit':__import__('subprocess').check_output(['git','-C',str(ROOT.parents[2]),'rev-parse','HEAD'],text=True).strip(),
             'source_fixture_sha256':digest(ROOT/'score-fixture.json'),
+            'adoption_spec_sha256':digest(ROOT/'sho-adoption-v1.json'),
             'adoption_record_sha256':digest(ROOT.parents[2]/'docs/tasks/sho-listening-v1/README.md'),
             'source_evidence_sha256':digest(ROOT.parents[2]/'docs/tasks/sho-listening-v1/sources.json'),
-            'code_sha256':{str(p):digest(p) for p in [Path(__file__),ROOT/'audio.py',ROOT.parent/'sho_one_pipe.py']},
+            'code_sha256':{str(p):digest(p) for p in [Path(__file__),ROOT/'sho_adoption.py',ROOT/'audio.py',ROOT.parent/'sho_one_pipe.py']},
             'events':{name:len(schedule(name=='corrected')) for name in samples},
             'files':files,'metrics':metrics,'difference_rms':difference,
             'independent_regeneration_pcm_identical':True,

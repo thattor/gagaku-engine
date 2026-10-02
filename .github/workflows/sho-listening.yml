@@ -17,6 +17,17 @@ jobs:
           python-version: '3.12'
       - run: python -m unittest features.gagaku.product.test_sho_listening -v
       - run: python -m features.gagaku.product.sho_listening --output-dir output/sho-listening-v1
+      - name: Preserve PR2 listening WAVs exactly
+        run: |
+          python - <<'CHECK'
+          from pathlib import Path
+          import hashlib
+          expected = {'sho-baseline-18s.wav':'5f21181fbb1c965234c67c26e234a849c93fb8c28515cc8fc50cd8533856edb0',
+                      'sho-corrected-18s.wav':'add94eda42fc6bce047818775f6a328c13dee4c8fdaa57213fd58974381c31b2'}
+          for name, digest in expected.items():
+              if hashlib.sha256((Path('output/sho-listening-v1')/name).read_bytes()).hexdigest() != digest:
+                  raise ValueError('PR2 waveform changed: '+name)
+          CHECK
       - uses: actions/upload-artifact@v4
         with:
           name: sho-listening-v1

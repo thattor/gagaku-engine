@@ -1,0 +1,248 @@
+{
+  "version": "sho-adoption-v1",
+  "scope": "sho body primary cells only; candidate data, not complete performance",
+  "baseline_sha256": "cc9b7b9422b838a16dac18afef630bcbbcffda90658e7f5dd13cf3202b31238a",
+  "reading_status": "BLOCKED_PUBLIC_EVIDENCE",
+  "listening_acceptance": "UNEVALUATED",
+  "performance_verified": false,
+  "chord_status": "modern candidate pipe sets; legacy pitch mapping, unmeasured tuning",
+  "chords": {
+    "一": [
+      "一",
+      "凢",
+      "乙",
+      "行",
+      "七",
+      "千"
+    ],
+    "乞": [
+      "乞",
+      "乙",
+      "行",
+      "七",
+      "八",
+      "千"
+    ],
+    "十": [
+      "下",
+      "十",
+      "行",
+      "七",
+      "上",
+      "八"
+    ],
+    "下": [
+      "下",
+      "千",
+      "行",
+      "七",
+      "上",
+      "美"
+    ],
+    "乙": [
+      "乙",
+      "行",
+      "七",
+      "上",
+      "八",
+      "千"
+    ]
+  },
+  "pipe_midi": {
+    "乞": 69,
+    "一": 71,
+    "工": 73,
+    "凢": 74,
+    "乙": 76,
+    "下": 78,
+    "十": 79,
+    "美": 80,
+    "行": 81,
+    "七": 83,
+    "上": 86,
+    "八": 88,
+    "千": 90
+  },
+  "corrections": [
+    {
+      "cell_id": "sho.L3.P6",
+      "old_symbol": "九下",
+      "read_symbol": "一/乞",
+      "kind": "compound",
+      "chord_path": [
+        "一",
+        "乞"
+      ],
+      "nominal_fractions": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "glyph_status": "image_checked",
+      "realization_status": "modern_hypothesis",
+      "evidence": "https://github.com/thattor/gagaku-engine/issues/1#issuecomment-5941780473",
+      "primary_sources": [
+        "https://dl.ndl.go.jp/api/iiif/1192407/R0000015/full/full/0/default.jpg",
+        "https://dl.ndl.go.jp/api/iiif/855853/R0000030/full/full/0/default.jpg"
+      ],
+      "duration_evidence": "https://mtosmt.org/issues/mto.20.26.4/mto.20.26.4.momii.html",
+      "operation_evidence": "https://www.chatorishimizu.com/composingforsho",
+      "duration_location": "§8 note32"
+    },
+    {
+      "cell_id": "sho.L4.P3",
+      "old_symbol": "九下",
+      "read_symbol": "十/下",
+      "kind": "compound",
+      "chord_path": [
+        "十",
+        "下"
+      ],
+      "nominal_fractions": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "glyph_status": "image_checked",
+      "realization_status": "modern_hypothesis",
+      "evidence": "https://github.com/thattor/gagaku-engine/issues/1#issuecomment-5941780473",
+      "primary_sources": [
+        "https://dl.ndl.go.jp/api/iiif/1192407/R0000015/full/full/0/default.jpg",
+        "https://dl.ndl.go.jp/api/iiif/855853/R0000030/full/full/0/default.jpg"
+      ],
+      "duration_evidence": "https://mtosmt.org/issues/mto.20.26.4/mto.20.26.4.momii.html",
+      "operation_evidence": "https://www.chatorishimizu.com/composingforsho",
+      "duration_location": "§8 note32"
+    },
+    {
+      "cell_id": "sho.L2.P6",
+      "old_symbol": "行",
+      "read_symbol": "引",
+      "kind": "hold",
+      "predecessor_id": "sho.L2.P5",
+      "chord_path": [
+        "一"
+      ],
+      "nominal_fractions": [
+        [
+          1,
+          1
+        ]
+      ],
+      "glyph_status": "image_checked",
+      "realization_status": "modern_hypothesis",
+      "evidence": "https://github.com/thattor/gagaku-engine/issues/1#issuecomment-5941780473",
+      "primary_sources": [
+        "https://dl.ndl.go.jp/api/iiif/1192407/R0000015/full/full/0/default.jpg",
+        "https://dl.ndl.go.jp/api/iiif/855853/R0000030/full/full/0/default.jpg"
+      ]
+    },
+    {
+      "cell_id": "sho.L2.P8",
+      "old_symbol": "行",
+      "read_symbol": "引",
+      "kind": "hold",
+      "predecessor_id": "sho.L2.P7",
+      "chord_path": [
+        "一"
+      ],
+      "nominal_fractions": [
+        [
+          1,
+          1
+        ]
+      ],
+      "glyph_status": "image_checked",
+      "realization_status": "modern_hypothesis",
+      "evidence": "https://github.com/thattor/gagaku-engine/issues/1#issuecomment-5941780473",
+      "primary_sources": [
+        "https://dl.ndl.go.jp/api/iiif/1192407/R0000015/full/full/0/default.jpg",
+        "https://dl.ndl.go.jp/api/iiif/855853/R0000030/full/full/0/default.jpg"
+      ]
+    },
+    {
+      "cell_id": "sho.L4.P6",
+      "old_symbol": "行",
+      "read_symbol": "引",
+      "kind": "hold",
+      "predecessor_id": "sho.L4.P5",
+      "chord_path": [
+        "乙"
+      ],
+      "nominal_fractions": [
+        [
+          1,
+          1
+        ]
+      ],
+      "glyph_status": "image_checked",
+      "realization_status": "modern_hypothesis",
+      "evidence": "https://github.com/thattor/gagaku-engine/issues/1#issuecomment-5941780473",
+      "primary_sources": [
+        "https://dl.ndl.go.jp/api/iiif/1192407/R0000015/full/full/0/default.jpg",
+        "https://dl.ndl.go.jp/api/iiif/855853/R0000030/full/full/0/default.jpg"
+      ]
+    },
+    {
+      "cell_id": "sho.L4.P8",
+      "old_symbol": "行",
+      "read_symbol": "引",
+      "kind": "hold",
+      "predecessor_id": "sho.L4.P7",
+      "chord_path": [
+        "乙"
+      ],
+      "nominal_fractions": [
+        [
+          1,
+          1
+        ]
+      ],
+      "glyph_status": "image_checked",
+      "realization_status": "modern_hypothesis",
+      "evidence": "https://github.com/thattor/gagaku-engine/issues/1#issuecomment-5941780473",
+      "primary_sources": [
+        "https://dl.ndl.go.jp/api/iiif/1192407/R0000015/full/full/0/default.jpg",
+        "https://dl.ndl.go.jp/api/iiif/855853/R0000030/full/full/0/default.jpg"
+      ]
+    }
+  ],
+  "edition_conflicts": {
+    "工": {
+      "1932": [
+        "下",
+        "工",
+        "行",
+        "七",
+        "美",
+        "凢"
+      ],
+      "1894": [
+        "乙",
+        "工",
+        "行",
+        "七",
+        "美",
+        "凢"
+      ],
+      "decision": "unselected; require explicit adoption before synthesis",
+      "sources": [
+        "https://dl.ndl.go.jp/api/iiif/1192407/R0000007/full/full/0/default.jpg",
+        "https://dl.ndl.go.jp/api/iiif/855853/R0000011/full/full/0/default.jpg"
+      ],
+      "difference_status": "image_checked_right_index_only",
+      "shared_pipes_status": "inherited_legacy_not_independently_rechecked"
+    }
+  },
+  "source_record": "docs/tasks/sho-listening-v1/sources.json"
+}
