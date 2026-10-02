@@ -1,0 +1,43 @@
+{
+  "version": "sho-continuous-v1",
+  "scope": "sho.L1.P1..sho.L4.P8 once, no repeat or tomede",
+  "adoption_version": "sho-adoption-v1",
+  "seconds_per_primary_cell": 1.5,
+  "tuning": "A430 equal tempered design",
+  "attack_seconds": 0.15,
+  "release_seconds": 0.25,
+  "early_release_seconds": 0.1,
+  "kigae_add_delay_seconds": 0.1,
+  "source_operation_pairs": [
+    "一→乞",
+    "十→下"
+  ],
+  "other_boundary_control": "author simultaneous set difference; keep shared pipes",
+  "ko_variants": [
+    "1932",
+    "1894"
+  ],
+  "performance_verified": false,
+  "listening_acceptance": "UNEVALUATED",
+  "extra_reading": {
+    "cell_id": "sho.L1.P2",
+    "legacy_symbol": "行",
+    "read_symbol": "引",
+    "adopted_chord": "十",
+    "glyph_status": "image_checked",
+    "meaning_status": "continuation_hypothesis",
+    "predecessor_id": "sho.L1.P1",
+    "sources": [
+      {
+        "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000014/full/full/0/default.jpg",
+        "sha256": "0834112950911f3a96f943050982d517821f0dd58e535f8bebb86b0feaaa5144",
+        "location": "c14 left p17, leftmost score column second primary point after 十"
+      },
+      {
+        "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000030/full/full/0/default.jpg",
+        "sha256": "7f599455c4b552dcc2f48097f54a86ddad9eed76a4a9294f0a8f76fe69b0f1fb",
+        "location": "c30 right p21, first music column after title, second primary point after 十"
+      }
+    ]
+  }
+}

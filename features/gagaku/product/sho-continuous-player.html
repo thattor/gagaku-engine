@@ -1,0 +1,11 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>笙・連続プレビューの比較</title><style>body{font:18px system-ui;max-width:45rem;margin:2rem auto;padding:0 1rem;line-height:1.7}audio{width:100%}small{color:#555}</style>
+<h1>笙の連続プレビュー（各48秒）</h1>
+<p>本体32主拍点を一続きにした、自前物理音色の候補です。全曲・三管合奏・反復・止手は含みません。途中から始まり、抜粋として音量を下げて終わります。</p>
+<p>同じ音量・制御条件で、工の管集合だけを2版に分けています。版差の正解や音色の受入は未確定です。工は15〜16.5秒。保持した管の発音位相が変わるため、その後にも音の差が続くことがあります。</p>
+<h2>候補A：工に「下」を使う1932版</h2><audio id="a" controls src="sho-continuous-ko-1932-48s.wav"></audio>
+<h2>候補B：工に「乙」を使う1894版</h2><audio id="b" controls src="sho-continuous-ko-1894-48s.wav"></audio>
+<p>32.25秒に一→乞、39.75秒に十→下の移行があります。先行解除と追加の時刻、調律・音量は自前の仮定です。共通管を保ち、引は直前合竹を持続する候補にしています。</p>
+<small>80点は本人の暫定聴感目安で未評価です。未再照合24箇所・管操作の未確定を含み、検証済み演奏とはしていません。</small>
+<p><a href="sho-continuous-inspection-v1.json">生成・検査記録</a></p>
+<script>const a=document.querySelector('#a'),b=document.querySelector('#b');a.addEventListener('play',()=>b.pause());b.addEventListener('play',()=>a.pause());</script></html>
