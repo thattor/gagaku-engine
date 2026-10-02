@@ -1,0 +1,27 @@
+name: Excerpt audition operation
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  operation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node features/gagaku/product/test_excerpt_player.cjs
+      - run: python -m unittest features.gagaku.product.test_excerpt_operation -v
+      - run: python -m features.gagaku.product.excerpt_operation --output-dir output/excerpt-operation-v1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: excerpt-operation-v1
+          path: output/excerpt-operation-v1
