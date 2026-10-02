@@ -1,0 +1,11 @@
+# Three-pipe prefix v1
+
+An audible integration candidate: first five primary cells of each instrument, 15 seconds, ensemble and three isolated stems. This is a separate candidate scope, not strict SHO_READING_V1 completion or full-song adoption. No 工 occurs in this prefix; both disclosed editions yield the same sho checkpoints here.
+
+Sho uses the continuous candidate, including L1.P2 引 holding 十, with its time axis multiplied by two. Ryuteki and hichiriki inherit the frozen fixture's pitches, registers and offset subdivisions without new source verification. Legacy verified claims are retained only as quarantined provenance. All output performance events remain unverified. The pinned source/design ledger rejects promotion, altered pitches/evidence and changed schedules.
+
+The existing coupled reed/delay sho model and generic physical jet/reed proxies generate their own banks. Own generated steady waveforms are folded and pitch-resampled. This is not measured or certified timbre: the jet proxy's modal branch and resampling remain limitations. No third-party recordings, new performer recordings or measurements are used. A430 equal temperament, 3 seconds per primary cell, attack .15 seconds and release .25 seconds before nominal end are author controls. Sho shared pipes remain held; melody notes reattack. No pressure reversal, traditional ornament certification or 止手 is claimed.
+
+Mix: left sho .7 / ryuteki .85 / hichiriki .5; right sho .7 / ryuteki .5 / hichiriki .85. Inherited bank RMS gains: .035 / .11 / .10. No final normalization, limiter or reverb. The end fade is an excerpt exit, not musical ending evidence.
+
+Run `python -m features.gagaku.product.three_pipe_prefix --output-dir output/three-pipe-prefix-v1`. Produces four PCM16 48kHz WAVs (720000 frames, ensemble stereo), player, events and inspection. A second independent bank must regenerate byte-identical WAVs. Inspection checks decoded WAV shape, nonfinite/clipping, per-channel sample steps and internal silence; numerical sanity bounds are author engineering limits, not traditional musical thresholds. Subjective 80 remains UNEVALUATED, fully verified performance events 0, required full performance denominator unknown, strict reading BLOCKED_PUBLIC_EVIDENCE.
