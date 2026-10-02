@@ -1,0 +1,42 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>三管抜粋の連続試聴</title>
+<style>body{font:18px system-ui;max-width:48rem;margin:2rem auto;padding:0 1rem;line-height:1.7}button{font:inherit;padding:.6rem 1rem;margin:.3rem}audio{width:100%}#state{padding:1rem;background:#eee;border-radius:.6rem}</style>
+<h1>三管抜粋の連続試聴</h1>
+<p>第1行8点・24秒の候補音声を繰り返します。接続の0.4秒重ね合わせは試聴用の自前制御です。全本体、初度・二返の解釈、止手は未実装。音高・音域・拍内配置は未検証を含み、本人の音色評価も未実施です。</p>
+<p><button id="start">連続試聴を開始</button><button id="finish" disabled>抜粋の末尾で終了</button><button id="logs" disabled>運用記録を保存</button></p>
+<p id="state" role="status" aria-live="polite">準備できました。開始すると音が出ます。</p>
+<p>終了を押すと、新しい抜粋の追加を止め、再生中の抜粋末尾で減衰します。待ち時間は最大24秒。5分では自動終了せず、10分で終了要求を出します。これは試聴用の人工的な終了で、実曲の正しい出口・止手ではありません。</p>
+<details><summary>音声の選択</summary><p>フォルダを直接開いた場合は、同梱の <code>source/three-pipe-line1-ensemble-24s.wav</code> を選択してください。</p><input id="file" type="file" accept=".wav,audio/wav"></details>
+<h2>生成した5分試聴</h2><audio id="offline" controls src="excerpt-five-minute-ensemble.wav"></audio>
+<p>5分時点の終了要求を受け、307.2秒で人工減衰を終える生成例です。上の連続試聴と同時には再生しないでください。R/M/A/E/P/Uの製品受入は未完了です。</p>
+<p><a href="excerpt-operation-inspection.json">生成・検査記録</a></p>
+<script src="excerpt-player.js"></script><script>
+let controller = null, context = null;
+const state = document.getElementById('state'), start = document.getElementById('start'), finish = document.getElementById('finish');
+start.onclick = async () => {
+  start.disabled = true; document.getElementById('offline').pause();
+  try {
+    context = new AudioContext({sampleRate:48000}); await context.resume();
+    const selected = document.getElementById('file').files[0];
+    const response = selected ? null : await fetch('source/three-pipe-line1-ensemble-24s.wav');
+    if (response && !response.ok) throw new Error('音声を読み込めません。音声の選択から同梱WAVを指定してください。');
+    const bytes = selected ? await selected.arrayBuffer() : await response.arrayBuffer();
+    const hash = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),x=>x.toString(16).padStart(2,'0')).join('');
+    ExcerptOperation.validateSourceHash(hash);
+    const buffer = await context.decodeAudioData(bytes);
+    controller = new ExcerptOperation.ExcerptController(context, buffer, (phase, elapsed, end) => {
+      state.textContent = phase === 'ended' ? '人工減衰による抜粋終了。止手は未実装です。' : phase === 'finish_pending' ? `終了待ち：あと${Math.max(0,end.endFrame/48000-elapsed).toFixed(1)}秒で抜粋末尾。` : `連続試聴中：${elapsed.toFixed(1)}秒`;
+      finish.disabled = phase !== 'playing';
+      if (phase === 'ended') { start.disabled = false; context.close(); }
+    });
+    controller.start(); document.getElementById('logs').disabled = false;
+  } catch (error) { state.textContent = error.message; start.disabled = false; if (context) context.close(); }
+};
+finish.onclick = () => { if (controller) controller.requestFinish(); };
+document.getElementById('offline').onplay = () => {
+  if (controller && ['playing','finish_pending'].includes(controller.phase)) { document.getElementById('offline').pause(); state.textContent = '連続試聴の終了後に再生してください。'; }
+};
+document.getElementById('logs').onclick = () => {
+  const url = URL.createObjectURL(new Blob([JSON.stringify(controller.log,null,2)],{type:'application/json'}));
+  const link = document.createElement('a'); link.href = url; link.download = 'excerpt-runtime.json'; link.click(); URL.revokeObjectURL(url);
+};
+</script></html>
