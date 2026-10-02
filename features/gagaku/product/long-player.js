@@ -18,6 +18,23 @@ class Controller{
   this.endFrame=384*FS;this.source.start(this.origin);this.source.stop(this.origin+384);
   this.emit('playing',{source_frames:buffer.length,repeat_frames:[96,192,288].map(t=>t*FS),default_end_frame:this.endFrame,origin:this.origin,base_latency:this.context.baseLatency??null,output_latency:this.context.outputLatency??null,terminal_release:"embedded_voice_envelopes"});
  }
+ canCancelFinish(){
+  return this.state==='exit_pending'&&this.context.currentTime<this.origin+this.endFrame/FS-.25-LOOKAHEAD;
+ }
+ cancelFinish(){
+  if(this.state!=='exit_pending')return false;
+  const now=this.context.currentTime,previousEndFrame=this.endFrame;
+  const entry={operation:'cancel_finish',previous_end_frame:previousEndFrame,context_time:now,origin:this.origin,cancel_deadline_seconds:previousEndFrame/FS-.25-LOOKAHEAD,scheduling_lookahead_seconds:LOOKAHEAD,clock:'audio_context_render_time',verified_exit:false,tomede:false};
+  if(!this.canCancelFinish()){this.emit('exit_pending',{...entry,cancel_status:'rejected_release_too_close_or_started'});return false;}
+  if(previousEndFrame<DURATION*FS){
+   this.gain.gain.cancelScheduledValues(now);
+   this.gain.gain.setValueAtTime(1,now);
+   this.source.stop(this.origin+DURATION);
+  }
+  this.endFrame=DURATION*FS;
+  this.emit('playing',{...entry,cancel_status:'cancelled',end_frame:this.endFrame,terminal_release:'embedded_voice_envelopes'});
+  return true;
+ }
  finish(){
   if(this.state!=='playing')return;
   const elapsed=Math.min(384,Math.max(0,this.context.currentTime-this.origin));if(elapsed>=384)return;const choice=finishPlan(Math.min(384,elapsed+LOOKAHEAD));this.endFrame=choice.end_frame;
