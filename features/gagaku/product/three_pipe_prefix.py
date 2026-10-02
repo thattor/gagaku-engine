@@ -18,29 +18,32 @@ CELL_SECONDS=3.0
 INSTRUMENTS=('sho','ryuteki','hichiriki')
 
 
-def _compile_plan():
+def _compile_plan(primary_count=5):
+    if type(primary_count) is not int or primary_count not in (5,8):
+        raise ValueError("only frozen prefix or first-line candidate supported")
+    cutoff=primary_count*1.5
     if digest(ROOT/'score-fixture.json')!=BASELINE_SHA:
         raise ValueError('frozen baseline changed')
     fixture=json.loads((ROOT/'score-fixture.json').read_text())
-    prefixes=[[p for p in checkpoints(edition) if p['cell_id'].startswith('sho.L1.') and int(p['cell_id'].split('.P')[1])<=5]
+    prefixes=[[p for p in checkpoints(edition) if p['cell_id'].startswith('sho.L1.') and int(p['cell_id'].split('.P')[1])<=primary_count]
               for edition in ('1932','1894')]
     if prefixes[0]!=prefixes[1]:
         raise ValueError('prefix now depends on unselected edition')
     points=prefixes[0]; result=[]
-    # Clip the existing continuous design at the fifth cell, then disclose 2x time scaling.
+    # Clip the existing continuous design at the selected cell, then disclose 2x time scaling.
     complete=checkpoints('1932')
     for event in spans(complete,controls(complete)):
-        if event['start']>=7.5: continue
+        if event['start']>=cutoff: continue
         cell_ids=[p['cell_id'] for p in points if p['id'] in event['checkpoint_ids']]
         if not cell_ids: raise ValueError('sho prefix missing source context')
         pitch=json.loads((ROOT/'sho-adoption-v1.json').read_text())['pipe_midi'][event['pipe']]
         result.append({'id':f'sho.prefix.N{len(result)+1}','instrument':'sho','pipe':event['pipe'],
-                       'midi':pitch,'start':event['start']*2,'end':min(7.5,event['end'])*2,
+                       'midi':pitch,'start':event['start']*2,'end':min(cutoff,event['end'])*2,
                        'cell_ids':cell_ids,'reading_evidence':[p for p in points if p['cell_id'] in cell_ids],
                        'reading_status':'sho_continuous_candidate_time_scaled',
                        'timing_status':'author_design','performance_verified':False})
     for instrument in ('ryuteki','hichiriki'):
-        for primary in range(1,6):
+        for primary in range(1,primary_count+1):
             cell_id=f'{instrument}.L1.P{primary}'
             cell=next(c for c in fixture['cells'] if c['id']==cell_id)
             if not cell.get('source') or not cell.get('midi') or cell['pitch_status']=='unresolved':
@@ -67,12 +70,14 @@ def plan():
     return result
 
 
-def validate(events):
+def validate(events,primary_count=5):
+    canonical_plan=_compile_plan(primary_count)
+    duration=primary_count*CELL_SECONDS
     if not events or len({e['id'] for e in events})!=len(events):
         raise ValueError('empty or duplicate note IDs')
-    expected={f'{instrument}.L1.P{primary}' for instrument in INSTRUMENTS for primary in range(1,6)}
+    expected={f'{instrument}.L1.P{primary}' for instrument in INSTRUMENTS for primary in range(1,primary_count+1)}
     observed={cell for event in events for cell in event['cell_ids']}
-    if observed!=expected or len(events)!=29:
+    if observed!=expected or len(events)!={5:29,8:39}[primary_count]:
         raise ValueError('prefix note/cell coverage changed')
     for event in events:
         if event['instrument'] not in INSTRUMENTS or type(event['midi']) is not int or not 0<=event['midi']<=127:
@@ -81,9 +86,9 @@ def validate(events):
             raise ValueError('candidate cannot be promoted')
         if not event.get('source') and not event.get('reading_evidence'):
             raise ValueError('missing source evidence')
-        if not all(type(event[k]) in (int,float) and math.isfinite(event[k]) for k in ('start','end')) or not 0<=event['start']<event['end']<=DURATION:
+        if not all(type(event[k]) in (int,float) and math.isfinite(event[k]) for k in ('start','end')) or not 0<=event['start']<event['end']<=duration:
             raise ValueError('nonfinite/outside prefix timing')
-    canonical={e['id']:e for e in _compile_plan()}
+    canonical={e['id']:e for e in canonical_plan}
     if any(e != canonical.get(e['id']) for e in events):
         raise ValueError('candidate ledger differs from pinned source/design')
     for instrument in INSTRUMENTS:
@@ -97,7 +102,7 @@ def validate(events):
                 raise ValueError('duplicate/overlapping voice')
         if instrument!='sho':
             ordered=sorted(selected,key=lambda e:e['start'])
-            if ordered[0]['start']!=0 or ordered[-1]['end']!=DURATION or any(a['end']!=b['start'] for a,b in zip(ordered,ordered[1:])):
+            if ordered[0]['start']!=0 or ordered[-1]['end']!=duration or any(a['end']!=b['start'] for a,b in zip(ordered,ordered[1:])):
                 raise ValueError('melody has unplanned gap')
 
 
@@ -115,9 +120,10 @@ def metrics(signal,channels=1):
     return data
 
 
-def render(bank,events):
-    validate(events)
-    stems={name:array('f',[0])*round(DURATION*FS) for name in INSTRUMENTS}
+def render(bank,events,primary_count=5):
+    validate(events,primary_count)
+    duration=primary_count*CELL_SECONDS
+    stems={name:array('f',[0])*round(duration*FS) for name in INSTRUMENTS}
     offset=12*math.log2(430/440)
     for event in events:
         signal=voice(bank,event['instrument'],event['midi']+offset,event['end']-event['start'],.15,.25)
