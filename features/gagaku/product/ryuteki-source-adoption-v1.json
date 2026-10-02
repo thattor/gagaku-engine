@@ -1,0 +1,1205 @@
+{
+  "version": "ryuteki-source-adoption-v1",
+  "dependency_commit": "85915cdb056c554db5b8688f785335f47d9212e3",
+  "duration_seconds": 96,
+  "seconds_per_primary_cell": 3,
+  "a4_hz": 430,
+  "attack_seconds": 0.15,
+  "release_seconds": 0.25,
+  "midi_adoption": {
+    "五": 78,
+    "上": 79,
+    "夕": 81,
+    "中": 83,
+    "丁": 85,
+    "六": 86,
+    "テ": 76,
+    "動候補": 76
+  },
+  "special_adoption": {
+    "く": "finger strike omitted; preceding pitch retained for this interval; not normal pitch",
+    "ノ": "preceding pitch retained, meaning unconfirmed",
+    "continuation": "preceding pitch retained; special mark not executed as repeat",
+    "動候補": "E5 chosen from タ chant for audition only; no verified 動 pitch or register shift",
+    "セ候補": "preceding pitch retained; illegible mark unresolved"
+  },
+  "cells": [
+    {
+      "id": "ryuteki.L1.P1",
+      "instrument": "ryuteki",
+      "line": 1,
+      "primary": 1,
+      "chant_candidate": "チラハ",
+      "finger_candidates": [
+        "中",
+        "夕",
+        "く"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 1",
+        "row": 1,
+        "bbox_normalized": [
+          0.84,
+          0.13,
+          0.895,
+          0.23
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L2.P1",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L2, red primary point 1; initial-only column excluded"
+      },
+      "legacy_chant_candidate": "トラロ",
+      "initial_only_annotation": {
+        "chant_candidate": "トロホ",
+        "execution": "not separately executed; ornament/timing unconfirmed"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L1.P2",
+      "instrument": "ryuteki",
+      "line": 1,
+      "primary": 2,
+      "chant_candidate": "ルイ",
+      "finger_candidates": [
+        "五",
+        "上"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 1",
+        "row": 2,
+        "bbox_normalized": [
+          0.84,
+          0.23,
+          0.895,
+          0.323
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L2.P2",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L2, red primary point 2; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L1.P3",
+      "instrument": "ryuteki",
+      "line": 1,
+      "primary": 3,
+      "chant_candidate": "トラルリ",
+      "finger_candidates": [
+        "五",
+        "上",
+        "五",
+        "夕"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 1",
+        "row": 3,
+        "bbox_normalized": [
+          0.84,
+          0.323,
+          0.895,
+          0.419
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L2.P3",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L2, red primary point 3; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L1.P4",
+      "instrument": "ryuteki",
+      "line": 1,
+      "primary": 4,
+      "chant_candidate": "ロイ",
+      "finger_candidates": [
+        "五",
+        "上"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 1",
+        "row": 4,
+        "bbox_normalized": [
+          0.84,
+          0.419,
+          0.895,
+          0.51
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L2.P4",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L2, red primary point 4; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L1.P5",
+      "instrument": "ryuteki",
+      "line": 1,
+      "primary": 5,
+      "chant_candidate": "タア",
+      "finger_candidates": [
+        "テ"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 1",
+        "row": 5,
+        "bbox_normalized": [
+          0.84,
+          0.51,
+          0.895,
+          0.61
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L2.P5",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L2, red primary point 5; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L1.P6",
+      "instrument": "ryuteki",
+      "line": 1,
+      "primary": 6,
+      "chant_candidate": "ハア",
+      "finger_candidates": [
+        "く"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 1",
+        "row": 6,
+        "bbox_normalized": [
+          0.84,
+          0.61,
+          0.895,
+          0.706
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L2.P6",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L2, red primary point 6; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L1.P7",
+      "instrument": "ryuteki",
+      "line": 1,
+      "primary": 7,
+      "chant_candidate": "トラルリ",
+      "finger_candidates": [
+        "五",
+        "上",
+        "五",
+        "夕"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 1",
+        "row": 7,
+        "bbox_normalized": [
+          0.84,
+          0.706,
+          0.895,
+          0.801
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L2.P7",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L2, red primary point 7; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L1.P8",
+      "instrument": "ryuteki",
+      "line": 1,
+      "primary": 8,
+      "chant_candidate": "ロイ",
+      "finger_candidates": [
+        "五",
+        "上"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 1",
+        "row": 8,
+        "bbox_normalized": [
+          0.84,
+          0.801,
+          0.895,
+          0.895
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L2.P8",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L2, red primary point 8; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L2.P1",
+      "instrument": "ryuteki",
+      "line": 2,
+      "primary": 1,
+      "chant_candidate": "タア",
+      "finger_candidates": [
+        "テ"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 2",
+        "row": 1,
+        "bbox_normalized": [
+          0.765,
+          0.13,
+          0.83,
+          0.23
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L3.P1",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L3, red primary point 1; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L2.P2",
+      "instrument": "ryuteki",
+      "line": 2,
+      "primary": 2,
+      "chant_candidate": "ハア",
+      "finger_candidates": [
+        "く",
+        "上"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 2",
+        "row": 2,
+        "bbox_normalized": [
+          0.765,
+          0.23,
+          0.83,
+          0.323
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L3.P2",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L3, red primary point 2; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L2.P3",
+      "instrument": "ryuteki",
+      "line": 2,
+      "primary": 3,
+      "chant_candidate": "ロヲル",
+      "finger_candidates": [
+        "六",
+        "丁"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 2",
+        "row": 3,
+        "bbox_normalized": [
+          0.765,
+          0.323,
+          0.83,
+          0.419
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L3.P3",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L3, red primary point 3; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L2.P4",
+      "instrument": "ryuteki",
+      "line": 2,
+      "primary": 4,
+      "chant_candidate": "ロホヲ",
+      "finger_candidates": [
+        "六",
+        "く"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 2",
+        "row": 4,
+        "bbox_normalized": [
+          0.765,
+          0.419,
+          0.83,
+          0.51
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L3.P4",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L3, red primary point 4; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L2.P5",
+      "instrument": "ryuteki",
+      "line": 2,
+      "primary": 5,
+      "chant_candidate": "トヲ",
+      "finger_candidates": [
+        "中"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 2",
+        "row": 5,
+        "bbox_normalized": [
+          0.765,
+          0.51,
+          0.83,
+          0.61
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L3.P5",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L3, red primary point 5; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L2.P6",
+      "instrument": "ryuteki",
+      "line": 2,
+      "primary": 6,
+      "chant_candidate": "トホヒ",
+      "finger_candidates": [
+        "中",
+        "く",
+        "セ候補"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 2",
+        "row": 6,
+        "bbox_normalized": [
+          0.765,
+          0.61,
+          0.83,
+          0.706
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L3.P6",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L3, red primary point 6; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L2.P7",
+      "instrument": "ryuteki",
+      "line": 2,
+      "primary": 7,
+      "chant_candidate": "勤タアラロロララ",
+      "finger_candidates": [
+        "動候補",
+        "夕",
+        "五",
+        "上",
+        "夕",
+        "テ"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 2",
+        "row": 7,
+        "bbox_normalized": [
+          0.765,
+          0.706,
+          0.83,
+          0.801
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L3.P7",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L3, red primary point 7; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L2.P8",
+      "instrument": "ryuteki",
+      "line": 2,
+      "primary": 8,
+      "chant_candidate": "ロイ",
+      "finger_candidates": [
+        "五",
+        "上"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 2",
+        "row": 8,
+        "bbox_normalized": [
+          0.765,
+          0.801,
+          0.83,
+          0.895
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L3.P8",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L3, red primary point 8; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L3.P1",
+      "instrument": "ryuteki",
+      "line": 3,
+      "primary": 1,
+      "chant_candidate": "トラロ",
+      "finger_candidates": [
+        "六",
+        "テ",
+        "六"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 3",
+        "row": 1,
+        "bbox_normalized": [
+          0.69,
+          0.13,
+          0.755,
+          0.23
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L4.P1",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L4, red primary point 1; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L3.P2",
+      "instrument": "ryuteki",
+      "line": 3,
+      "primary": 2,
+      "chant_candidate": "ホラハ",
+      "finger_candidates": [
+        "く",
+        "テ",
+        "く"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 3",
+        "row": 2,
+        "bbox_normalized": [
+          0.69,
+          0.23,
+          0.755,
+          0.323
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L4.P2",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L4, red primary point 2; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L3.P3",
+      "instrument": "ryuteki",
+      "line": 3,
+      "primary": 3,
+      "chant_candidate": "チイラ",
+      "finger_candidates": [
+        "五",
+        "上",
+        "テ"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 3",
+        "row": 3,
+        "bbox_normalized": [
+          0.69,
+          0.323,
+          0.755,
+          0.419
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L4.P3",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L4, red primary point 3; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L3.P4",
+      "instrument": "ryuteki",
+      "line": 3,
+      "primary": 4,
+      "chant_candidate": "タアリロ",
+      "finger_candidates": [
+        "テ",
+        "六",
+        "中"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 3",
+        "row": 4,
+        "bbox_normalized": [
+          0.69,
+          0.419,
+          0.755,
+          0.51
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L4.P4",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L4, red primary point 4; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L3.P5",
+      "instrument": "ryuteki",
+      "line": 3,
+      "primary": 5,
+      "chant_candidate": "ホヲ",
+      "finger_candidates": [
+        "く"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 3",
+        "row": 5,
+        "bbox_normalized": [
+          0.69,
+          0.51,
+          0.755,
+          0.61
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L4.P5",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L4, red primary point 5; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L3.P6",
+      "instrument": "ryuteki",
+      "line": 3,
+      "primary": 6,
+      "chant_candidate": "タアラロロラ",
+      "finger_candidates": [
+        "中",
+        "夕",
+        "五",
+        "上",
+        "夕"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 3",
+        "row": 6,
+        "bbox_normalized": [
+          0.69,
+          0.61,
+          0.755,
+          0.706
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L4.P6",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L4, red primary point 6; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L3.P7",
+      "instrument": "ryuteki",
+      "line": 3,
+      "primary": 7,
+      "chant_candidate": "ロツラハ",
+      "finger_candidates": [
+        "五",
+        "五",
+        "上",
+        "く"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 3",
+        "row": 7,
+        "bbox_normalized": [
+          0.69,
+          0.706,
+          0.755,
+          0.801
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L4.P7",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L4, red primary point 7; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "id": "ryuteki.L3.P8",
+      "instrument": "ryuteki",
+      "line": 3,
+      "primary": 8,
+      "chant_candidate": "ロヲ",
+      "finger_candidates": [
+        "中"
+      ],
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 3",
+        "row": 8,
+        "bbox_normalized": [
+          0.69,
+          0.801,
+          0.755,
+          0.895
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "legacy_cell_id": "ryuteki.L4.P8",
+      "legacy_source": {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "location": "right page body L4, red primary point 8; initial-only column excluded"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "instrument": "ryuteki",
+      "chant_candidate": "タア",
+      "finger_candidates": [
+        "テ"
+      ],
+      "legacy_cell_id": null,
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "id": "ryuteki.L4.P1",
+      "line": 4,
+      "primary": 1,
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 4",
+        "row": 1,
+        "bbox_normalized": [
+          0.62,
+          0.13,
+          0.68,
+          0.23
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "instrument": "ryuteki",
+      "chant_candidate": "ロホ",
+      "finger_candidates": [
+        "六",
+        "く"
+      ],
+      "legacy_cell_id": null,
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "id": "ryuteki.L4.P2",
+      "line": 4,
+      "primary": 2,
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 4",
+        "row": 2,
+        "bbox_normalized": [
+          0.62,
+          0.23,
+          0.68,
+          0.323
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "instrument": "ryuteki",
+      "chant_candidate": "チイイヤ",
+      "finger_candidates": [
+        "五",
+        "上",
+        "五"
+      ],
+      "legacy_cell_id": null,
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "id": "ryuteki.L4.P3",
+      "line": 4,
+      "primary": 3,
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 4",
+        "row": 3,
+        "bbox_normalized": [
+          0.62,
+          0.323,
+          0.68,
+          0.419
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "instrument": "ryuteki",
+      "chant_candidate": "タア",
+      "finger_candidates": [
+        "テ"
+      ],
+      "legacy_cell_id": null,
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "id": "ryuteki.L4.P4",
+      "line": 4,
+      "primary": 4,
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 4",
+        "row": 4,
+        "bbox_normalized": [
+          0.62,
+          0.419,
+          0.68,
+          0.51
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "instrument": "ryuteki",
+      "chant_candidate": "ハア",
+      "finger_candidates": [
+        "く"
+      ],
+      "legacy_cell_id": null,
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "id": "ryuteki.L4.P5",
+      "line": 4,
+      "primary": 5,
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 4",
+        "row": 5,
+        "bbox_normalized": [
+          0.62,
+          0.51,
+          0.68,
+          0.61
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "instrument": "ryuteki",
+      "chant_candidate": "タア",
+      "finger_candidates": [
+        "テ"
+      ],
+      "legacy_cell_id": null,
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "id": "ryuteki.L4.P6",
+      "line": 4,
+      "primary": 6,
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 4",
+        "row": 6,
+        "bbox_normalized": [
+          0.62,
+          0.61,
+          0.68,
+          0.706
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "instrument": "ryuteki",
+      "chant_candidate": "引様+ア",
+      "finger_candidates": [
+        "continuation"
+      ],
+      "legacy_cell_id": null,
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "id": "ryuteki.L4.P7",
+      "line": 4,
+      "primary": 7,
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 4",
+        "row": 7,
+        "bbox_normalized": [
+          0.62,
+          0.706,
+          0.68,
+          0.801
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    },
+    {
+      "instrument": "ryuteki",
+      "chant_candidate": "引様二記号+二返",
+      "finger_candidates": [
+        "continuation"
+      ],
+      "legacy_cell_id": null,
+      "glyph_status": "image_transcription_candidate",
+      "performance_verified": false,
+      "id": "ryuteki.L4.P8",
+      "line": 4,
+      "primary": 8,
+      "source": {
+        "id": "1194354",
+        "canvas": 15,
+        "page": 18,
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+        "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+        "column": "right-page body column 4",
+        "row": 8,
+        "bbox_normalized": [
+          0.62,
+          0.801,
+          0.68,
+          0.895
+        ],
+        "bbox_note": "Approximate manual full-canvas region, normalized top-left origin"
+      },
+      "reading_status": "source_partition_corrected_candidate"
+    }
+  ],
+  "source_partition": {
+    "source_id": "1194354",
+    "canvas": 15,
+    "page": 18,
+    "image_url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+    "image_sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+    "finding": "legacy ryuteki L1 on canvas14 is the preceding piece final column; all four adopted target body columns are on canvas15",
+    "removed_legacy_cells": [
+      "ryuteki.L1.P1",
+      "ryuteki.L1.P2",
+      "ryuteki.L1.P3",
+      "ryuteki.L1.P4",
+      "ryuteki.L1.P5",
+      "ryuteki.L1.P6",
+      "ryuteki.L1.P7",
+      "ryuteki.L1.P8"
+    ],
+    "remapping": "legacy L2→actual L1, L3→actual L2, L4→actual L3; actual L4 added",
+    "verification_scope": "independent visual source-partition review; glyph readings, pitch, timing and realization remain candidates"
+  },
+  "verified_exit": false,
+  "tomede": false,
+  "traditional_nihen_verified": false,
+  "fully_verified_performance_events": 0,
+  "strict_reading_status": "BLOCKED_PUBLIC_EVIDENCE",
+  "musical_acceptance": "UNEVALUATED",
+  "dependency_hashes": {
+    "features/gagaku/product/three_pipe_body.py": "70d10bd2a608a67c6a712b465813b665e766efcd9e256e16a3c3ba8e4ad5be27",
+    "features/gagaku/product/three-pipe-body-v1.json": "955fe9a4c1484e811171a6943690aa56970ec9ccd258834ff92c94b6f6d9ad85",
+    "features/gagaku/product/three_pipe_prefix.py": "47cfea57538e96b8339ddc2101e2d5517c858b12e8681f34924155a095d6890c",
+    "features/gagaku/product/sho_continuous.py": "c596f75b9468914d55cebd5689796a46cfac913b742b0979d25e03b4297f72a6",
+    "features/gagaku/product/sho-adoption-v1.json": "9cbc8b25c3a11bef40e260bd1e7a0177c69c704d52b72071f553fe6bbd637e53",
+    "features/gagaku/product/sho-continuous-v1.json": "3a73e3e18f179fdcd10e88716b41c5f1dda3502017adc537b35bf8e23c6438b5",
+    "features/gagaku/product/score-fixture.json": "cc9b7b9422b838a16dac18afef630bcbbcffda90658e7f5dd13cf3202b31238a",
+    "features/gagaku/product/audio.py": "597cba9b414b64775a60e6cbb6f118fd30bd1481c8c8f8d1b7ea9cb74f887a1d",
+    "features/gagaku/product/models.py": "43366a09b35e5a0831d811b738d395e7b80f3584f9c2faaf69e9edfd9bb6184f",
+    "features/gagaku/product/sho_adoption.py": "58dea3f6e9a86806d09a276aa2dd5aac9657aa89779bcbeee78513e9e3d31f5d",
+    "features/gagaku/product/score-sources.json": "84b01fab9637011809ade2f159bd7ed9eb93435027f4a639715ca2275bfb0130",
+    "features/gagaku/evaluate.py": "c98ff66d0428292d4599a9e4433b4ee2a8fc7c071c1a5a38b8956f582dc5a701",
+    "features/gagaku/sho_one_pipe.py": "7c3f9e1f74e4265327f63b938a5b98f11ced7a0b862ffd6cf4c58d2c6be6486a",
+    "docs/PRODUCT_GOAL_V1.md": "25e71a1a1570102c827130ebe60d48bd4417b654768e706d2947bf8c24520e32"
+  },
+  "unknowns": [
+    "absolute register and tuning are author choices",
+    "ryuteki 動/勤 and セ glyph/meaning unresolved; finger strikes omitted",
+    "hichiriki ノ meaning, L3.P4/P6 partition and L2/L4.P8 execution unconfirmed",
+    "initial-only column and 二返 repetition not executed",
+    "sho inherited 24 readings not independently rechecked",
+    "actual final-column extension-like signs and 二返 are retained-pitch author hypotheses; no traditional return/exit/tomede realization adopted",
+    "corrected source partition does not certify every candidate glyph or ornament, original tempo, register or tone",
+    "true ending and shared return point remain BLOCKED_PUBLIC_EVIDENCE; user U remains UNEVALUATED"
+  ]
+}
