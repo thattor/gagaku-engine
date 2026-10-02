@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000015/full/full/0/default.jpg",
+    "sha256": "72a11df6a5f7cdc196e87f7cdefc0149b14e33c59d51aa55042156916ff63f50",
+    "location": "right p18: columns L2,L3,L4; compound L3.P6,L4.P3; 引 L2.P6/P8,L4.P6/P8 and preceding P5/P7",
+    "inspection": "actual full image viewed 2026-10-02",
+    "use": "notation evidence only"
+  },
+  {
+    "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000030/full/full/0/default.jpg",
+    "sha256": "7f599455c4b552dcc2f48097f54a86ddad9eed76a4a9294f0a8f76fe69b0f1fb",
+    "location": "right p21: excluding title, columns 2,3,4; same rows",
+    "inspection": "actual full image viewed 2026-10-02",
+    "use": "notation evidence only"
+  },
+  {
+    "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000007/full/full/0/default.jpg",
+    "sha256": "85303a3997e54c7f3c4bc3549cd3368fe5209b14637412a169496ca14d7ff028",
+    "location": "right p2: 工 column/right index 下",
+    "inspection": "actual full image viewed 2026-10-02",
+    "use": "notation evidence only"
+  },
+  {
+    "url": "https://dl.ndl.go.jp/api/iiif/855853/R0000011/full/full/0/default.jpg",
+    "sha256": "639878406a7ccb053afc938c55e27e08769bf32bb415ef7afa66ef7f3c74c420",
+    "location": "right: 工 row, 乙 black dot, 下 white dot",
+    "inspection": "actual full image viewed 2026-10-02",
+    "use": "notation evidence only"
+  },
+  {
+    "url": "https://www.chatorishimizu.com/composingforsho",
+    "location": "§4 Ichi→Kotsu / Ju→Ge",
+    "inspection": "live text accessed 2026-10-02",
+    "use": "modern operation sequence; no seconds"
+  },
+  {
+    "url": "https://mtosmt.org/issues/mto.20.26.4/mto.20.26.4.momii.html",
+    "location": "§8 note32",
+    "inspection": "live text accessed 2026-10-02",
+    "use": "equal nominal durations"
+  },
+  {
+    "url": "https://github.com/thattor/gagaku-engine/issues/1#issuecomment-5941780473",
+    "location": "Example21(a/b) independent earlier image check",
+    "use": "prior primary image interpretation, not new PDF check"
+  }
+]
