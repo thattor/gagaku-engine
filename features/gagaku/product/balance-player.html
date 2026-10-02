@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>三管の音量を調整して聴く</title>
+<style>body{max-width:48rem;margin:2rem auto;padding:0 1rem;font:17px/1.7 system-ui;color:#20242a;background:#faf9f5}h1{font-size:1.6rem}label{display:grid;grid-template-columns:5rem 1fr 4rem;gap:1rem;align-items:center;margin:1rem 0}input{width:100%}button{font:inherit;margin:.3rem;padding:.4rem .8rem}pre{white-space:pre-wrap;background:white;padding:1rem;border:1px solid #ddd}small{display:block}</style>
+<h1>三管の音量を調整して聴く</h1>
+<p>192秒の試作品です。音量を変えて、各管の重なりや聞こえ方を比較できます。譜面・音高・テンポは同じです。</p>
+<fieldset id="controls" disabled><legend>次の再生に使う音量</legend>
+<label for="sho">笙<input id="sho" type="range" min="0" max="150" step="1" value="100"><output id="sho-value">100%</output></label>
+<label for="ryuteki">龍笛<input id="ryuteki" type="range" min="0" max="150" step="1" value="100"><output id="ryuteki-value">100%</output></label>
+<label for="hichiriki">篳篥<input id="hichiriki" type="range" min="0" max="150" step="1" value="100"><output id="hichiriki-value">100%</output></label>
+<button id="reset">基準の音量に戻す</button></fieldset>
+<button id="start" disabled>この音量で再生</button><button id="finish" disabled>次の候補境界で終了</button>
+<button id="save-settings" disabled>音量設定を保存</button><button id="save-wav" disabled>この音量のWAVを保存</button><button id="save-runtime">運用記録を保存</button>
+<pre id="status" role="status">音声を準備しています</pre>
+<small>音量は作者が設けた試聴用の調整です。実器を測定した値ではありません。全管を0%にした状態では再生できません。</small>
+<p>本体2回の反復と96/192秒での人工減衰は候補です。伝統的な二返・止手、龍笛ソロの入口は未確定。聴感は未評価、厳格読解はBLOCKEDです。</p>
+<p>保存WAVは選んだ音量による192秒全体です。再生中の早期終了をWAVへ反映する機能はありません。</p>
+<p><a href="balance-inspection.json">生成・出典・音声の検査</a></p>
+<script src="pass-player.js"></script><script src="balance-player.js"></script><script>
+const names=['sho','ryuteki','hichiriki'],controls=document.getElementById('controls'),start=document.getElementById('start'),finish=document.getElementById('finish'),statusEl=document.getElementById('status'),settingsButton=document.getElementById('save-settings'),wavButton=document.getElementById('save-wav');
+let context,stems,manifest,controller,selectedPCM,playingLevels;
+const levels=()=>Object.fromEntries(names.map(n=>[n,Number(document.getElementById(n).value)]));
+const hash=async bytes=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(x=>x.toString(16).padStart(2,'0')).join('');
+function selection(){
+ for(const n of names)document.getElementById(n+'-value').textContent=document.getElementById(n).value+'%';
+ selectedPCM=null;try{PipeBalance.validateLevels(levels());start.disabled=false;settingsButton.disabled=false;wavButton.disabled=false;statusEl.textContent='準備完了：選んだ音量で次の再生を始めます';}catch(e){start.disabled=true;settingsButton.disabled=true;wavButton.disabled=true;statusEl.textContent=String(e);}
+}
+function download(name,data,type){const a=document.createElement('a'),url=URL.createObjectURL(new Blob([data],{type}));a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+async function load(){try{
+ manifest=await(await fetch('balance-inspection.json')).json();if(manifest.version!=='three-pipe-balance-v1'||manifest.verified_exit!==false||manifest.tomede!==false||manifest.traditional_nihen_verified!==false||manifest.strict_reading_status!=='BLOCKED_PUBLIC_EVIDENCE'||manifest.musical_acceptance!=='UNEVALUATED')throw Error('candidate incorrectly promoted');
+ stems={};for(const entry of manifest.source_files){if(!names.includes(entry.instrument)||entry.file!=='three-pipe-pass-'+entry.instrument+'-192s.wav'||stems[entry.instrument])throw Error('unexpected stem');const response=await fetch(entry.file);if(!response.ok)throw Error('stem unavailable');const bytes=await response.arrayBuffer();if(!PipeBalance.approved(entry.instrument,entry.sha256)||await hash(bytes)!==entry.sha256)throw Error('audio hash mismatch');stems[entry.instrument]=PipeBalance.stemPCM(bytes);}
+ if(Object.keys(stems).length!==3)throw Error('missing stem');
+ // Validate the whole slider range from actual delivered PCM before enabling controls.
+ PipeBalance.mixPCM(stems,{sho:150,ryuteki:150,hichiriki:150});
+ context=new AudioContext({sampleRate:48000});controller=new PassOperation.Controller(context,state=>{if(state==='ended')statusEl.textContent=JSON.stringify({state:'ended',end_seconds:controller.endFrame/48000,levels_percent:playingLevels,verified_exit:false,tomede:false});const editable=state==='ended';controls.disabled=!editable;settingsButton.disabled=!editable;wavButton.disabled=!editable;start.disabled=!editable;finish.disabled=state!=='playing';});
+ for(const n of names)document.getElementById(n).value=manifest.levels_percent[n];controls.disabled=false;selection();
+}catch(e){statusEl.textContent=String(e);}}
+for(const n of names)document.getElementById(n).oninput=selection;document.getElementById('reset').onclick=()=>{for(const n of names)document.getElementById(n).value=100;selection();};
+start.onclick=async()=>{start.disabled=true;controls.disabled=true;settingsButton.disabled=true;wavButton.disabled=true;try{playingLevels=levels();selectedPCM=PipeBalance.mixPCM(stems,playingLevels);await context.resume();controller.start(PipeBalance.audioBuffer(context,selectedPCM));controller.log[0].levels_percent=playingLevels;}catch(e){controls.disabled=false;selection();statusEl.textContent=String(e);}};
+finish.onclick=()=>controller.finish();
+settingsButton.onclick=()=>download('balance-settings.json',JSON.stringify({version:'three-pipe-balance-settings-v1',levels_percent:levels(),timing_and_pitch_unchanged:true,verified_exit:false,tomede:false},null,2),'application/json');
+wavButton.onclick=()=>{selectedPCM??=PipeBalance.mixPCM(stems,levels());download('balance-192s.wav',PipeBalance.wavBytes(selectedPCM),'audio/wav');};
+document.getElementById('save-runtime').onclick=()=>download('balance-runtime.json',JSON.stringify({performance_source_commit:manifest?.performance_source_commit,log:controller?.log??[]},null,2),'application/json');
+setInterval(()=>{if(controller&&['playing','exit_pending'].includes(controller.state))statusEl.textContent=JSON.stringify({state:controller.state,seconds:Math.max(0,Math.min(controller.endFrame/48000,context.currentTime-controller.origin)),end_seconds:controller.endFrame/48000,levels_percent:playingLevels,verified_exit:false,tomede:false});},500);
+load();
+</script></html>
