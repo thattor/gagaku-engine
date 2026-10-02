@@ -1,0 +1,158 @@
+{
+  "version": "three-pipe-pass-v1",
+  "dependency_commit": "2136c7cf851b14fb052b4e3ccbbe4ff3dd857444",
+  "body_seconds": 96,
+  "passes": 2,
+  "initial_adoption": {
+    "cells": [
+      "ryuteki.L2.P1",
+      "ryuteki.L2.P2"
+    ],
+    "first_pass_chant": [
+      "トロホ",
+      "ルイ"
+    ],
+    "later_pass_chant": [
+      "チラハ",
+      "ルイ"
+    ],
+    "finger_order": [
+      [
+        "中",
+        "夕",
+        "く"
+      ],
+      [
+        "五",
+        "上"
+      ]
+    ],
+    "pitch_or_timing_difference_from_body": false,
+    "return_to_common": "L2.P3 after these two cells; author adoption, no direct joining arrow confirmed",
+    "source": {
+      "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000015/full/full/0/default.jpg",
+      "sha256": "1c1e63c6f4fe314d93c9e24f6bd51c3c94d45d790638e22a16cb122e280a6f6b",
+      "location": "rightmost 初度用之 short column, two red primary points; bbox [0.878,0.137,0.932,0.320]",
+      "use": "source facts and interpretation; not a recording"
+    },
+    "comparison": {
+      "url": "https://dl.ndl.go.jp/api/iiif/855852/R0000014/full/full/0/default.jpg",
+      "sha256": "173363c2a46ca517d06f6314a842a202ce95218e1e8caf62fa29db529a0779a0",
+      "location": "right page 後度用之 short column; bbox [0.815,0.240,0.857,0.600]",
+      "use": "source facts and interpretation; not a recording"
+    },
+    "glyph_status": "independently_image_checked_candidate",
+    "performance_verified": false
+  },
+  "repeat_adoption": {
+    "return": "all 32 body primary points -> body L1.P1",
+    "kind": "author_full_body_repeat_candidate",
+    "traditional_nihen_verified": false,
+    "reason": "source 二返 signs are not enough to determine a shared three-pipe return; full-body repeat selected for operation testing only",
+    "source_facts": [
+      "hichiriki 二返 at L2/L4 terminal regions",
+      "ryuteki 返二 at L3 terminal region, not inferred to be L2/L4"
+    ]
+  },
+  "connection_adoption": {
+    "sho": "hold matching pipes continuously across body boundary; other pipes remove/add by inherited body schedule",
+    "melodies": "normal pitch signs reattack; explicit continuation signs remain held within each pass",
+    "attack_seconds": 0.15,
+    "release_seconds": 0.25,
+    "source_measurement": false
+  },
+  "exit_adoption": {
+    "eligible_seconds": [
+      96,
+      192
+    ],
+    "release_seconds": 0.25,
+    "first_boundary_request_deadline_seconds": 95.75,
+    "kind": "author_body_boundary_release",
+    "verified_exit": false,
+    "tomede": false
+  },
+  "strict_reading_status": "BLOCKED_PUBLIC_EVIDENCE",
+  "fully_verified_performance_events": 0,
+  "musical_acceptance": "UNEVALUATED",
+  "source_audit": {
+    "inspected": [
+      {
+        "url": "https://dl.ndl.go.jp/api/iiif/855852/R0000010/full/full/0/default.jpg",
+        "sha256": "96862fd6ac6110c9af2f9cbf9089095891700339185b5bf798ddc7cac5387245",
+        "location": "notation/打指 explanations",
+        "use": "source facts and interpretation; not a recording"
+      },
+      {
+        "url": "https://dl.ndl.go.jp/api/iiif/855852/R0000011/full/full/0/default.jpg",
+        "sha256": "14ae93b996a181070ebce4bcd6f4a8df8f62558104926933e5f7c0720bfad1b9",
+        "location": "拍節説明",
+        "use": "source facts and interpretation; not a recording"
+      },
+      {
+        "url": "https://dl.ndl.go.jp/api/iiif/855851/R0000011/full/full/0/default.jpg",
+        "sha256": "84688e3302480d6ed9d706852bb5170cbca65f243c99389b54a7f1a2c9afd3e8",
+        "location": "拍子解",
+        "use": "source facts and interpretation; not a recording"
+      },
+      {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000003/full/full/0/default.jpg",
+        "sha256": "da991a0653ead9deaadfb03c5fd90b449c7b807ec069ed82608cebf5c0871ead",
+        "location": "preface; describes red beat marks, no direct tomede or return mapping established",
+        "use": "source facts and interpretation; not a recording"
+      },
+      {
+        "url": "https://dl.ndl.go.jp/api/iiif/1194354/R0000004/full/full/0/default.jpg",
+        "sha256": "7a3668b02105d229ab0c87e09e2a63c15ce7653caf4752c1dc15b955221f8428",
+        "location": "preface; describes red beat marks, no direct tomede or return mapping established",
+        "use": "source facts and interpretation; not a recording"
+      },
+      {
+        "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000003/full/full/0/default.jpg",
+        "sha256": "2afdd14e0169dfef275d4aa58081e2ddb8f434ccf45c4c1800f2057caa0aa023",
+        "location": "preface; describes red beat marks, no direct tomede or return mapping established",
+        "use": "source facts and interpretation; not a recording"
+      },
+      {
+        "url": "https://dl.ndl.go.jp/api/iiif/1192011/R0000004/full/full/0/default.jpg",
+        "sha256": "8eb10afc4570f4da5d4b6a4985ef42a2f32b885d07f2279c73c35ed6a183c69c",
+        "location": "preface; describes red beat marks, no direct tomede or return mapping established",
+        "use": "source facts and interpretation; not a recording"
+      },
+      {
+        "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000003/full/full/0/default.jpg",
+        "sha256": "91b905dd85a936d82d3ddffc3a30565b782dfe0de0a53b2df01ea360be8bee4a",
+        "location": "preface; describes red beat marks, no direct tomede or return mapping established",
+        "use": "source facts and interpretation; not a recording"
+      },
+      {
+        "url": "https://dl.ndl.go.jp/api/iiif/1192407/R0000004/full/full/0/default.jpg",
+        "sha256": "cda356ab69d8446fc7e03d198f2c5720f989ee39f16010290a8e74f8678ef704",
+        "location": "preface; describes red beat marks, no direct tomede or return mapping established",
+        "use": "source facts and interpretation; not a recording"
+      }
+    ],
+    "roles_only": [
+      {
+        "url": "https://gagaku.stanford.edu/en/theory/form/",
+        "finding": "general solo entrance and tomede role; does not supply target three-pipe note sequence"
+      },
+      {
+        "url": "https://rijtm.kcua.ac.jp/archives/takuwa20121013openschool.html",
+        "finding": "talk describes modern solo beginning and coda when cutting; other piece, not target three-pipe exit notes"
+      }
+    ],
+    "unadopted_lead": {
+      "url": "https://houteki.blog.fc2.com/blog-entry-1465.html?sp=",
+      "reason": "historical translation cites a generic bugaku stopping formula, not primary image; not adopted for production"
+    },
+    "search_bound": "existing two score editions + six preface images + three focused search batches; no claim of exhaustive absence"
+  },
+  "remaining": [
+    "source-backed shared return point",
+    "actual ryuteki solo entrance/tsukudokoro mapping",
+    "target three-pipe tomede notes and entry",
+    "initial chant ornament/timing differences",
+    "source correctness/tempo/timbre acceptance inherited from PR8"
+  ]
+}

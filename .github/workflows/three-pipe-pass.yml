@@ -1,0 +1,27 @@
+name: Three-pipe pass candidate
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pass:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest features.gagaku.product.test_three_pipe_pass -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node features/gagaku/product/test_pass_player.cjs
+      - run: python -m features.gagaku.product.three_pipe_pass --output-dir output/three-pipe-pass-v1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: three-pipe-pass-v1
+          path: output/three-pipe-pass-v1
