@@ -1,0 +1,15 @@
+<!doctype html><meta charset="utf-8"><title>三管本体の反復・終了要求候補</title><h1>三管本体4回・接続と終了要求の検査</h1><p>96秒本体を4回通します。1932年の初度別列2点を初回に選択しますが、既存候補と音高・時間は同じで、唱歌表記だけの採用です。戻り先は自前の本体全体反復で、伝統的な二返は未検証。龍笛ソロの入口と真正の止手は未実装です。</p><button id="start" disabled>再生を開始</button><button id="finish" disabled>次の候補境界で終了</button><button id="export">運用記録を保存</button><pre id="status">音声を準備しています</pre><p>終了要求は96・192・288・384秒の候補境界を選択し、末尾0.25秒で人工減衰します。各境界の減衰開始後に押した場合は次の候補境界まで待ちます。ブラウザ予約には0.10秒の余裕を加えて候補を選びます。時刻はAudioContextの描画時計で、出力遅延による耳に届く時刻との差があります。384秒の末尾は生成時の各発音envelopeによる減衰です。停止減衰を止手と呼びません。聴感は未評価、厳格読解はBLOCKEDです。</p><p><a href="long-inspection.json">検査</a> / <a href="long-events.json">演奏スケジュール</a> / <a href="long-exit-requests.json">1000+件の候補境界検査</a></p><script src="long-player.js"></script><script>
+const begin=document.getElementById('start'),finish=document.getElementById('finish'),statusEl=document.getElementById('status');let context,buffer,controller;
+async function load(){
+ try{
+ const r=await(await fetch('long-inspection.json')).json();if(r.verified_exit!==false||r.tomede!==false||r.traditional_nihen_verified!==false)throw Error('candidate incorrectly promoted');
+ const file=r.files.find(x=>x.file==='three-pipe-long-ensemble-384s.wav');const bytes=await(await fetch(file.file)).arrayBuffer();
+ const hash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(x=>x.toString(16).padStart(2,'0')).join('');if(hash!==file.sha256)throw Error('audio hash mismatch');
+ context=new AudioContext({sampleRate:48000});buffer=await context.decodeAudioData(bytes);controller=new LongOperation.Controller(context,(state)=>{begin.disabled=state!=='ended';finish.disabled=state!=='playing';});
+ begin.disabled=false;statusEl.textContent='準備完了：384秒候補音声、hash一致';
+ }catch(e){statusEl.textContent=String(e);}
+}
+begin.onclick=async()=>{begin.disabled=true;try{await context.resume();controller.start(buffer);}catch(e){statusEl.textContent=String(e);begin.disabled=false;finish.disabled=true;}};finish.onclick=()=>controller.finish();
+setInterval(()=>{if(controller&&controller.state!=='ready')statusEl.textContent=JSON.stringify({state:controller.state,seconds:Math.max(0,Math.min(controller.endFrame/48000,context.currentTime-controller.origin)),end_seconds:controller.endFrame/48000,verified_exit:false,tomede:false});},500);
+document.getElementById('export').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(controller?.log??[],null,2)],{type:'application/json'}));a.download='long-runtime.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};load();
+</script>

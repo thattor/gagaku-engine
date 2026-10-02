@@ -1,0 +1,27 @@
+name: Three-pipe long body candidate
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  long:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest features.gagaku.product.test_three_pipe_long -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node features/gagaku/product/test_long_player.cjs
+      - run: python -m features.gagaku.product.three_pipe_long --output-dir output/three-pipe-long-v1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: three-pipe-long-v1
+          path: output/three-pipe-long-v1

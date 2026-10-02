@@ -1,0 +1,66 @@
+{
+  "version": "three-pipe-long-v1",
+  "dependency_commit": "95cfb1fa3545588e750e59b2d4ff7418fb6cb98a",
+  "body_seconds": 96,
+  "passes": 4,
+  "duration_seconds": 384,
+  "a4_hz": 430,
+  "attack_seconds": 0.15,
+  "release_seconds": 0.25,
+  "exit_adoption": {
+    "eligible_seconds": [
+      96,
+      192,
+      288,
+      384
+    ],
+    "deadline_seconds": [
+      95.75,
+      191.75,
+      287.75,
+      383.75
+    ],
+    "kind": "author_body_boundary_release",
+    "verified_exit": false,
+    "tomede": false,
+    "after_last_deadline": "bounded terminal completion at 384; the already scheduled release is not restarted"
+  },
+  "repeat_adoption": {
+    "kind": "author_full_body_repeat_candidate",
+    "traditional_nihen_verified": false,
+    "initial_pass": "canonical pass1 glyph annotations",
+    "later_passes": "canonical pass2 glyph annotations repeated; unchanged pitch and timing"
+  },
+  "connection_adoption": {
+    "sho": "merge matching pipes across all three body joins before rendering a single voice per continuous span",
+    "melodies": "retain canonical pass continuation semantics",
+    "source_measurement": false
+  },
+  "fully_verified_performance_events": 0,
+  "strict_reading_status": "BLOCKED_PUBLIC_EVIDENCE",
+  "musical_acceptance": "UNEVALUATED",
+  "dependency_hashes": {
+    "features/gagaku/product/three_pipe_pass.py": "7eeae8ab800c4cc52a410c16ac2e9de0fe0b1b26fbbc24b4ea88b20e08365a8f",
+    "features/gagaku/product/three-pipe-pass-v1.json": "2a59d07f2923d60ac938553e0bf4f035d6eac9418d27cbf67cac7f8a335371ad",
+    "features/gagaku/product/three_pipe_body.py": "70d10bd2a608a67c6a712b465813b665e766efcd9e256e16a3c3ba8e4ad5be27",
+    "features/gagaku/product/three-pipe-body-v1.json": "955fe9a4c1484e811171a6943690aa56970ec9ccd258834ff92c94b6f6d9ad85",
+    "features/gagaku/product/three_pipe_prefix.py": "47cfea57538e96b8339ddc2101e2d5517c858b12e8681f34924155a095d6890c",
+    "features/gagaku/product/sho_continuous.py": "c596f75b9468914d55cebd5689796a46cfac913b742b0979d25e03b4297f72a6",
+    "features/gagaku/product/sho-continuous-v1.json": "3a73e3e18f179fdcd10e88716b41c5f1dda3502017adc537b35bf8e23c6438b5",
+    "features/gagaku/product/sho_adoption.py": "58dea3f6e9a86806d09a276aa2dd5aac9657aa89779bcbeee78513e9e3d31f5d",
+    "features/gagaku/product/sho-adoption-v1.json": "9cbc8b25c3a11bef40e260bd1e7a0177c69c704d52b72071f553fe6bbd637e53",
+    "features/gagaku/product/score-fixture.json": "cc9b7b9422b838a16dac18afef630bcbbcffda90658e7f5dd13cf3202b31238a",
+    "features/gagaku/product/audio.py": "597cba9b414b64775a60e6cbb6f118fd30bd1481c8c8f8d1b7ea9cb74f887a1d",
+    "features/gagaku/product/models.py": "43366a09b35e5a0831d811b738d395e7b80f3584f9c2faaf69e9edfd9bb6184f",
+    "features/gagaku/evaluate.py": "c98ff66d0428292d4599a9e4433b4ee2a8fc7c071c1a5a38b8956f582dc5a701",
+    "features/gagaku/sho_one_pipe.py": "7c3f9e1f74e4265327f63b938a5b98f11ced7a0b862ffd6cf4c58d2c6be6486a"
+  },
+  "remaining": [
+    "source-backed shared return point",
+    "actual ryuteki solo entrance/tsukudokoro mapping",
+    "target three-pipe tomede notes and entry",
+    "initial chant ornament/timing differences",
+    "source correctness/tempo/timbre acceptance inherited from PR8",
+    "5/10/20-minute verified-exit operation and user acceptance are not established by this bounded 384-second candidate"
+  ]
+}
